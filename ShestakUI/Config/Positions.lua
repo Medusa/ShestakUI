@@ -1,4 +1,4 @@
-﻿local T, C, L, _ = unpack(select(2, ...))
+local T, C, L, _ = unpack(select(2, ...))
 
 ----------------------------------------------------------------------------------------
 --	Position options
@@ -21,7 +21,7 @@ C["position"] = {
 	["vehicle"] = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -245, 160},				-- Vehicle frame
 	["ghost"] = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 157},					-- Ghost frame
 	["uierror"] = {"TOP", UIParent, "TOP", 0, -30},									-- Errors frame
-	["quest"] = {"TOPRIGHT", UIParent, "TOPRIGHT", -339, -165},						-- Quest log
+	["quest"] = {"TOPLEFT", UIParent, "TOPLEFT", 5, -51},						-- Quest log
 	["loot"] = {"TOPLEFT", UIParent, "TOPLEFT", 245, -220},							-- Loot
 	["group_loot"] = {"BOTTOM", UIParent, "BOTTOM", -210, 500},						-- Group roll loot
 	["threat_meter"] = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 24},			-- Threat meter
@@ -41,21 +41,21 @@ C["position"] = {
 --	["damage_meter"] = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -23, 26},			-- Damage meter
 	-- ActionBar positions
 	["bottom_bars"] = {"BOTTOM", UIParent, "BOTTOM", 0, 8},							-- Bottom bars
-	["right_bars"] = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 330},			-- Right bars
+	["right_bars"] = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 157},			-- Right bars
 	["pet_horizontal"] = {"BOTTOMRIGHT", UIParent, "BOTTOM", -175, 167},			-- Horizontal pet bar
-	["stance_bar"] = {"TOPLEFT", UIParent, "TOPLEFT", 21, -21},						-- Stance bar
+	["stance_bar"] = {"TOPLEFT", UIParent, "TOPLEFT", 321, -20},						-- Stance bar
 	["vehicle_bar"] = {"BOTTOMRIGHT", ActionButton1, "BOTTOMLEFT", -3, 0},			-- Vehicle button
-	["micro_menu"] = {"TOPLEFT", UIParent, "TOPLEFT", 217, -16},					-- Micro menu
+	["micro_menu"] = {"TOPLEFT", UIParent, "TOPLEFT", 21, -21},					-- Micro menu
 	-- UnitFrame positions
 	unitframes = {
-		["player"] = {"BOTTOMRIGHT", "ActionBarAnchor", "TOPLEFT", -5, 247},		-- Player frame
-		["target"] = {"BOTTOMLEFT", "ActionBarAnchor", "TOPRIGHT", 5, 247},			-- Target frame
+		["player"] = {"BOTTOMRIGHT", "ActionBarAnchor", "TOPLEFT", 37, 247},		-- Player frame
+		["target"] = {"BOTTOMLEFT", "ActionBarAnchor", "TOPRIGHT", -37, 247},			-- Target frame
 		["target_target"] = {"TOPRIGHT", "oUF_Target", "BOTTOMRIGHT", 0, -19},		-- ToT frame
 		["pet"] = {"TOPLEFT", "oUF_Player", "BOTTOMLEFT", 0, -19},					-- Pet frame
 		["focus"] = {"TOPRIGHT", "oUF_Player", "BOTTOMRIGHT", 0, -19},				-- Focus frame
 		["focus_target"] = {"TOPLEFT", "oUF_Target", "BOTTOMLEFT", 0, -19},			-- Focus target frame
 		["party_heal"] = {"TOPLEFT", "oUF_Player", "BOTTOMRIGHT", 7, -19},			-- Heal layout Party frames
-		["raid_heal"] = {"TOPLEFT", "oUF_Player", "BOTTOMRIGHT", 7, -19},			-- Heal layout Raid frames
+		["raid_heal"] = {"CENTER", UIParent, "CENTER", 0, -58},			-- Heal layout Raid frames
 		["party_dps"] = {"BOTTOMLEFT", UIParent, "LEFT", 23, -70},					-- DPS layout Party frames
 		["raid_dps"] = {"TOPLEFT", UIParent, "TOPLEFT", 23, -51},					-- DPS layout Raid frames
 		["arena"] = {"BOTTOMRIGHT", UIParent, "RIGHT", -60, -102},					-- Arena frames

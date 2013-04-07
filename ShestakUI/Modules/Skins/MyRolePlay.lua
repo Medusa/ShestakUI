@@ -6,7 +6,11 @@ if C.skins.my_role_play ~= true or not IsAddOnLoaded("MyRolePlay") then return e
 ----------------------------------------------------------------------------------------
 hooksecurefunc(mrp, "AddMRPTab", function()
 	T.SkinTab(CharacterFrameTab5)
+<<<<<<< HEAD
 	CharacterFrameTab5:SetText(L_MRP)
+=======
+	CharacterFrameTab5:SetText("MyRolePlay")
+>>>>>>> 8a82fae0ab63f7cbbf172eeebf12ecf1c2090e6e
 end)
 
 hooksecurefunc(mrp, "CreateOptionsPanel", function()

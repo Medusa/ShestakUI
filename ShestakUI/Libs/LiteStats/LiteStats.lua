@@ -1,4 +1,4 @@
-﻿local T, C, L, _ = unpack(select(2, ...))
+local T, C, L, _ = unpack(select(2, ...))
 
 ----------------------------------------------------------------------------------------
 --	Based on LiteStats(by Katae)
@@ -741,10 +741,18 @@ end
 ----------------------------------------------------------------------------------------
 if ping.enabled then
 	Inject("Ping", {
-		OnLoad = function(self) self:RegisterEvent("MINIMAP_PING") end,
+		OnLoad = function(self) 
+			self:RegisterEvent("MINIMAP_PING") 
+			self.animGroup = self.text:CreateAnimationGroup()
+			self.anim = self.animGroup:CreateAnimation("Alpha")
+			self.animGroup:SetScript("OnFinished", function() self.text:Hide() end)
+			self.anim:SetChange(-1)
+			self.anim:SetOrder(1)
+			self.anim:SetDuration(2.8)
+			self.anim:SetStartDelay(5)
+			end,
 		OnEvent = function(self, event, unit)
 			if unit == P and ping.hide_self then return end
-			if (unit == P and self.timer and time() - self.timer > 1) or not self.timer or unit ~= P then
 				local class = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[select(2, UnitClass(unit))]
 				self.text:SetText(format(ping.fmt, UnitName(unit)))
 				if class then
@@ -752,11 +760,10 @@ if ping.enabled then
 				else
 					self.text:SetTextColor(1, 1, 1, 1)
 				end
-	 			if UIFrameIsFading(self) then UIFrameFlashRemoveFrame(self) end
-				UIFrameFlash(self, 0.2, 2.8, 8, false, 0, 5)
-				self.timer = time()
+				self.animGroup:Stop()
+				self.text:Show()
+				self.animGroup:Play()
 			end
-		end
 	})
 end
 
@@ -1244,9 +1251,7 @@ if bags.enabled then
 			for i = 0, NUM_BAG_SLOTS do
 				free, total = free + GetContainerNumFreeSlots(i), total + GetContainerNumSlots(i)
 			end
-			GameTooltip:SetOwner(self, "ANCHOR_NONE")
-			GameTooltip:ClearAllPoints()
-			GameTooltip:SetPoint(bags.tip_anchor, bags.tip_frame, bags.tip_x, bags.tip_y)
+			GameTooltip:SetOwner(self, "ANCHOR_BOTTOMLEFT", -3, 26)
 			GameTooltip:ClearLines()
 			if GetBindingKey("TOGGLEBACKPACK") then
 				GameTooltip:AddLine(BACKPACK_TOOLTIP.." ("..GetBindingKey("TOGGLEBACKPACK")..")", tthead.r, tthead.g, tthead.b)
@@ -1256,6 +1261,14 @@ if bags.enabled then
 			GameTooltip:AddLine(" ")
 			GameTooltip:AddLine(format(NUM_FREE_SLOTS, free, total), 1, 1, 1)
 			GameTooltip:Show()
+			if C.toppanel.enable == true and C.toppanel.mouseover == true then
+				TopPanel:SetAlpha(1)
+			end
+		end,
+		OnLeave = function()
+			if C.toppanel.enable == true and C.toppanel.mouseover == true then
+				TopPanel:SetAlpha(0)
+			end
 		end,
 	})
 end
@@ -1299,9 +1312,7 @@ if talents.enabled then
 		OnEnter = function(self)
 			self.hovered = true
 			if UnitLevel(P) >= 10 then
-			GameTooltip:SetOwner(self, "ANCHOR_NONE")
-			GameTooltip:ClearAllPoints()
-			GameTooltip:SetPoint(talents.tip_anchor, talents.tip_frame, talents.tip_x, talents.tip_y)
+				GameTooltip:SetOwner(self, talents.tip_anchor, talents.tip_x, talents.tip_y)
 				GameTooltip:ClearLines()
 				GameTooltip:AddLine(SPECIALIZATION, tthead.r, tthead.g, tthead.b)
 				GameTooltip:AddLine(" ")
@@ -1311,10 +1322,16 @@ if talents.enabled then
 					end
 				end
 				GameTooltip:Show()
+				if C.toppanel.enable == true and C.toppanel.mouseover == true then
+					TopPanel:SetAlpha(1)
+				end
 			end
 		end,
 		OnLeave = function(self)
 			self.hovered = false
+			if C.toppanel.enable == true and C.toppanel.mouseover == true then
+				TopPanel:SetAlpha(0)
+			end
 		end,
 		OnClick = function(_, b)
 			if b == "RightButton" and GetNumSpecGroups() > 1 then
@@ -1794,5 +1811,3 @@ lpanels:CreateLayout("LiteStats", layout)
 lpanels:ApplyLayout(nil, "LiteStats")
 
 Inject = nil
-
--- Edit by Oz of shestakdotorg --

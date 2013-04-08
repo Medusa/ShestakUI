@@ -340,8 +340,9 @@ C["loot"] = {
 	["rolllootframe"] = true,					        -- Enable group roll frame
 	["icon_size"] = 22,							-- Icon size
 	["width"] = 221,							-- Loot window width
-	["auto_greed"] = true,            -- Push "greed" or "disenchant" button when an item roll
-	["auto_confirm_de"] = false,				                -- Auto confirm disenchant
+	["auto_greed"] = true,						-- Push "greed" or "disenchant" button when an item roll
+	["auto_confirm_de"] = true,					-- Auto confirm disenchant
+
 }
 
 ----------------------------------------------------------------------------------------

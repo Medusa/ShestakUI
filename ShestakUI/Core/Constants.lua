@@ -1,7 +1,7 @@
 ﻿local T, C, L, _ = unpack(select(2, ...))
 
 ----------------------------------------------------------------------------------------
---	ShestakUI variables
+--        ShestakUI variables
 ----------------------------------------------------------------------------------------
 T.dummy = function() return end
 T.name = UnitName("player")
@@ -14,15 +14,5 @@ T.color = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[T.class]
 T.version = GetAddOnMetadata("ShestakUI", "Version")
 T.getscreenheight = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"))
 T.getscreenwidth = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "(%d+)x+%d"))
-
-if T.name == "Вершок" or T.name == "Вещмешок" or T.name == "Гребешок" or T.name == "Кулешок" or T.name == "Лапушок"
-or T.name == "Обушок" or T.name == "Ремешок" or T.name == "Торгашок" or T.name == "Черешок" or T.name == "Женишок"
-or T.name == "Шестак" or T.name == "Дефляция" then
-	T.author = true
-end
-
-if T.name == "Oz" and T.realm == "Nemesis" then
-	T.oz = true
-end
-
 -- Edit by Oz of shestakdotorg --
+

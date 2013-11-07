@@ -33,7 +33,6 @@ local function InstallUI()
 	SetCVar("autoOpenLootHistory", 0)
 	SetCVar("lossOfControl", 0)
 
-<<<<<<< HEAD
 	if T.author == true then
 		SetCVar("scriptErrors", 1)
 		SetCVar("interactOnLeftClick", 0)
@@ -82,12 +81,6 @@ local function InstallUI()
 		SetAllowLowLevelRaid(1)
 	end
 
-	if T.name == "Oz" or T.name == "Medusa" and T.realm == "Pozzo dell'Eternità" then
-		SetCVar("scriptErrors", 1)
-	end
-
-=======
->>>>>>> 294f7f496c200291c2f79a3b92802d356974e8b3
 	-- Setting chat frames
 	if C.chat.enable == true and not (IsAddOnLoaded("Prat-3.0") or IsAddOnLoaded("Chatter")) then
 		for i = 1, NUM_CHAT_WINDOWS do
@@ -116,7 +109,6 @@ local function InstallUI()
 			if not frame.isLocked then FCF_SetLocked(frame, 1) end
 		end
 
-<<<<<<< HEAD
 		if T.author == true then
 			FCF_ResetChatWindows()
 			FCF_OpenNewWindow(GUILD)
@@ -163,8 +155,6 @@ local function InstallUI()
 		ChatFrame_AddMessageGroup(ChatFrame1, "PET_BATTLE_COMBAT_LOG")
 		ChatFrame_AddMessageGroup(ChatFrame1, "PET_BATTLE_INFO")
 
-=======
->>>>>>> 294f7f496c200291c2f79a3b92802d356974e8b3
 		-- Enable classcolor automatically on login and on each character without doing /configure each time
 		ToggleChatColorNamesByClassGroup(true, "SAY")
 		ToggleChatColorNamesByClassGroup(true, "EMOTE")

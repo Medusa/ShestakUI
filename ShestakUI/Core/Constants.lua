@@ -13,6 +13,7 @@ T.realm = GetRealmName()
 T.color = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[T.class]
 T.version = GetAddOnMetadata("ShestakUI", "Version")
 T.getscreenheight = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"))
+<<<<<<< HEAD
 T.getscreenwidth = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "(%d+)x+%d"))
 
 if T.name == "Вершок" or T.name == "Вещмешок" or T.name == "Гребешок" or T.name == "Кулешок" or T.name == "Лапушок"
@@ -26,3 +27,6 @@ if T.name == "Oz" and T.realm == "Nemesis" then
 end
 
 -- Edit by Oz of shestakdotorg --
+=======
+T.getscreenwidth = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "(%d+)x+%d"))
+>>>>>>> 294f7f496c200291c2f79a3b92802d356974e8b3

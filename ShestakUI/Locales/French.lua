@@ -94,9 +94,6 @@ L_UF_GHOST = "Fantôme"
 L_UF_DEAD = "Mort"
 L_UF_OFFLINE = "Hors ligne"
 L_UF_MANA = "Peu de mana"
-L_UF_TRINKET_READY = "Bijou Prêt : "
-L_UF_TRINKET_USED = "Bijou Utilisé : "
-L_UF_WOTF_USED = "Volonté des Réprouvés utilisé : "
 
 -- Map
 L_MAP_CURSOR = "Curseur : "
@@ -290,7 +287,7 @@ L_POPUP_CURRENCY_CAP = "You get maximum value of" -- Needs review
 L_WELCOME_LINE_1 = "Bienvenue sur ShestakUI "
 L_WELCOME_LINE_2_1 = "Tapez /cfg pour configurer l'interface, ou visitez http://shestak.org"
 L_WELCOME_LINE_2_2 = "pour plus d'informations"
-L_WELCOME_LINE_3 = "Note: cette version de ShestakUI (|cff00FFFFOzEdit 1.3.5|r|cffFFFF00) est édité par Oz de Pozzo dell'Eternità.|r" -- Goooooooooogle translated
+L_WELCOME_LINE_3 = "Note: cette version de ShestakUI (|cff00FFFFOzEdit 1.3.6|r|cffFFFF00) est édité par Oz de Pozzo dell'Eternità.|r" -- Goooooooooogle translated
 
 -- Combat text
 L_COMBATTEXT_KILLING_BLOW = "Coup Fatal"

@@ -408,10 +408,10 @@ if durability.enabled then
 			GameTooltip:ClearAllPoints()
 			GameTooltip:SetPoint(modules.Durability.tip_anchor, modules.Durability.tip_frame, modules.Durability.tip_x, modules.Durability.tip_y)
 			GameTooltip:ClearLines()
-			local avgItemLevel, avgItemLevelEquipped = GetAverageItemLevel()
-			avgItemLevel = floor(avgItemLevel)
-			avgItemLevelEquipped = floor(avgItemLevelEquipped)
 			if C.tooltip.average_lvl == true then
+				local avgItemLevel, avgItemLevelEquipped = GetAverageItemLevel()
+				avgItemLevel = floor(avgItemLevel)
+				avgItemLevelEquipped = floor(avgItemLevelEquipped)
 				GameTooltip:AddDoubleLine(DURABILITY, STAT_AVERAGE_ITEM_LEVEL..": "..avgItemLevelEquipped.." / "..avgItemLevel, tthead.r, tthead.g, tthead.b, tthead.r, tthead.g, tthead.b)
 			else
 				GameTooltip:AddLine(DURABILITY, tthead.r, tthead.g, tthead.b)
@@ -453,7 +453,7 @@ if durability.enabled then
 				else
 					for i = 1, GetNumEquipmentSets() do
 						local name, icon = GetEquipmentSetInfo(i)
-						tinsert(menulist, {text = format("|T%s:"..t_icon..":"..t_icon..":0:0:64:64:5:59:5:59:%d|t %s", icon, t_icon, name), notCheckable = 1, func = function() UseEquipmentSet(name) end})
+						tinsert(menulist, {text = format("|T%s:"..t_icon..":"..t_icon..":0:0:64:64:5:59:5:59:%d|t %s", icon, t_icon, name), notCheckable = 1, func = function() if InCombatLockdown() then print("|cffffff00"..ERR_NOT_IN_COMBAT.."|r") return end UseEquipmentSet(name) end})
 					end
 				end
 				EasyMenu(menulist, LSMenus, "cursor", 0, 0, "MENU")
@@ -601,11 +601,13 @@ if clock.enabled then
 		OnEvent = function(self) if self.hovered then self:GetScript("OnEnter")(self) end end,
 		OnEnter = function(self)
 			if not self.hovered then RequestRaidInfo() self.hovered = true end
+			local weekday = select(date"%w"+1,CalendarGetWeekdayNames())
+			local month = select(date"%m",CalendarGetMonthNames())
 			GameTooltip:SetOwner(self, "ANCHOR_NONE")
 			GameTooltip:ClearAllPoints()
 			GameTooltip:SetPoint(clock.tip_anchor, clock.tip_frame, clock.tip_x, clock.tip_y)
 			GameTooltip:ClearLines()
-			GameTooltip:AddLine(date"%A, %B %d %Y", tthead.r, tthead.g, tthead.b)
+			GameTooltip:AddLine(format("%s, %s %s", weekday, month, date"%d %Y"), tthead.r, tthead.g, tthead.b)
 			GameTooltip:AddLine(" ")
 			GameTooltip:AddDoubleLine(gsub(TIMEMANAGER_TOOLTIP_LOCALTIME, ":", ""), zsub(GameTime_GetLocalTime(true), "%s*AM", "am", "%s*PM", "pm"), ttsubh.r, ttsubh.g, ttsubh.b, 1, 1, 1)
 			GameTooltip:AddDoubleLine(gsub(TIMEMANAGER_TOOLTIP_REALMTIME, ":", ""), zsub(GameTime_GetGameTime(true), "%s*AM", "am", "%s*PM", "pm"), ttsubh.r, ttsubh.g, ttsubh.b, 1, 1, 1)
@@ -795,6 +797,7 @@ if guild.enabled then
 		wipe(guildTable)
 		for i = 1, GetNumGuildMembers() do
 			local name, rank, _, level, _, zone, note, officernote, connected, status, class, _, _, mobile = GetGuildRosterInfo(i)
+			name = Ambiguate(name, "guild")
 			guildTable[i] = {name, rank, level, zone, note, officernote, connected, status, class, mobile}
 		end
 		table.sort(guildTable, function(a, b)
@@ -864,6 +867,9 @@ if guild.enabled then
 		OnClick = function(self, b)
 			if b == "LeftButton" then
 				ToggleGuildFrame()
+				if IsInGuild() then
+					GuildFrame_TabClicked(GuildFrameTab2)
+				end
 			elseif b == "MiddleButton" and IsInGuild() then
 				local s = CURRENT_GUILD_SORTING
 				SortGuildRoster(IsShiftKeyDown() and s or (IsAltKeyDown() and (s == "rank" and "note" or "rank") or s == "class" and "name" or s == "name" and "level" or s == "level" and "zone" or "class"))
@@ -952,6 +958,7 @@ if guild.enabled then
 						end
 						name, rank, _, level, _, zone, note, officernote, connected, status, class, _, _, isMobile = GetGuildRosterInfo(i)
 						if (connected or isMobile) and level >= guild.threshold then
+							name = Ambiguate(name, "guild")
 							if GetRealZoneText() == zone then zone_r, zone_g, zone_b = 0.3, 1, 0.3 else zone_r, zone_g, zone_b = 1, 1, 1 end
 							if isMobile then zone = "|cffa5a5a5"..REMOTE_CHAT.."|r" end
 							classc, levelc = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[class], GetQuestDifficultyColor(level)

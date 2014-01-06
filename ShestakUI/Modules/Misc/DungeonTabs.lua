@@ -59,7 +59,7 @@ local function SkinTab(f, t)
 		f:GetNormalTexture():SetPoint("BOTTOMRIGHT", -2, 2)
 		f:GetNormalTexture():SetTexCoord(0.1, 0.9, 0.1, 0.9)
 		f:SetTemplate("Default")
-		f:StyleButton()
+		f:StyleButton(true)
 	else
 		f:SetNormalTexture(t)
 	end
@@ -70,7 +70,7 @@ local function STHookFrame(fname)
 	local prevtab
 	local frametabs = {}
 
-	-- PVP tab
+	-- PvP tab
 	frametabs["PVPUIFrame"] = CreateFrame("CheckButton", "PVPSideTab", frame, "SpellBookSkillLineTabTemplate")
 	SkinTab(frametabs["PVPUIFrame"], "Interface\\BattlefieldFrame\\UI-Battlefield-Icon")
 	if IsAddOnLoaded("Aurora") then

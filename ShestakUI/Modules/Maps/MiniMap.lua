@@ -184,6 +184,9 @@ local micromenu = {
 	end},
 	{text = guildText, notCheckable = 1, func = function()
 		ToggleGuildFrame()
+		if IsInGuild() then
+			GuildFrame_TabClicked(GuildFrameTab2)
+		end
 	end},
 	{text = SOCIAL_BUTTON, notCheckable = 1, func = function()
 		ToggleFriendsFrame()
@@ -214,7 +217,10 @@ local micromenu = {
 		end
 	end},
 	{text = LOOKING_FOR_RAID, notCheckable = 1, func = function()
-		ToggleRaidFrame()
+		ToggleFrame(RaidBrowserFrame)
+	end},
+	{text = ENCOUNTER_JOURNAL, notCheckable = 1, func = function()
+		ToggleEncounterJournal()
 	end},
 	{text = MOUNTS_AND_PETS, notCheckable = 1, func = function()
 		if InCombatLockdown() then
@@ -222,11 +228,11 @@ local micromenu = {
 		end
 		TogglePetJournal()
 	end},
-	{text = ENCOUNTER_JOURNAL, notCheckable = 1, func = function()
-		ToggleEncounterJournal()
-	end},
 	{text = HELP_BUTTON, notCheckable = 1, func = function()
 		ToggleHelpFrame()
+	end},
+	{text = BLIZZARD_STORE, notCheckable = true, func = function()
+		StoreMicroButton:Click()
 	end},
 	{text = L_MINIMAP_CALENDAR, notCheckable = 1, func = function()
 		ToggleCalendar()
@@ -238,10 +244,6 @@ local micromenu = {
 		ToggleFrame(LootHistoryFrame)
 	end},
 }
-
-if C_StorePublic.IsEnabled() then
-	tinsert(micromenu, {text = BLIZZARD_STORE, notCheckable = 1, func = function() StoreMicroButton:Click() end})
-end
 
 Minimap:SetScript("OnMouseUp", function(self, button)
 	local position = MinimapAnchor:GetPoint()

@@ -1103,12 +1103,19 @@ local function Shared(self, unit)
 	if C.unitframe.show_arena and unit == "arena" then
 		self.Trinket = CreateFrame("Frame", self:GetName().."_Trinket", self)
 		self.Trinket:SetSize(31, 31)
+
+		self.FactionIcon = CreateFrame("Frame", nil, self)
+		self.FactionIcon:SetSize(31, 31)
+
 		if C.unitframe.arena_on_right == true then
 			self.Trinket:SetPoint("TOPRIGHT", self, "TOPLEFT", -5, 2)
+			self.FactionIcon:SetPoint("TOPRIGHT", self, "TOPLEFT", -5, 2)
 		else
 			self.Trinket:SetPoint("TOPLEFT", self, "TOPRIGHT", 5, 2)
+			self.FactionIcon:SetPoint("TOPLEFT", self, "TOPRIGHT", 5, 2)
 		end
 		self.Trinket:SetTemplate("Default")
+		self.FactionIcon:SetTemplate("Default")
 
 		self.AuraTracker = CreateFrame("Frame", nil, self)
 		self.AuraTracker:SetWidth(self.Trinket:GetWidth())
@@ -1239,7 +1246,6 @@ local function Shared(self, unit)
 		self.HealPrediction = {
 			myBar = mhpb,
 			otherBar = ohpb,
-			maxOverflow = 1,
 			PostUpdate = function(frame)
 				if frame.myBar:GetValue() == 0 then frame.myBar:SetAlpha(0) else frame.myBar:SetAlpha(1) end
 				if frame.otherBar:GetValue() == 0 then frame.otherBar:SetAlpha(0) else frame.otherBar:SetAlpha(1) end
@@ -1404,14 +1410,16 @@ if C.unitframe.show_arena == true then
 							local color = (CUSTOM_CLASS_COLORS or RAID_CLASS_COLORS)[class]
 							if C.unitframe.own_color == true then
 								f.Health:SetStatusBarColor(unpack(C.unitframe.uf_color))
+								f.Spec:SetText(spec)
+								f.Spec:SetTextColor(color.r, color.g, color.b)
 							else
 								if color then
 									f.Health:SetStatusBarColor(color.r, color.g, color.b)
 								else
 									f.Health:SetStatusBarColor(unpack(C.unitframe.uf_color))
 								end
+								f.Spec:SetText(spec)
 							end
-							f.Spec:SetText(spec.."  -  "..LOCALIZED_CLASS_NAMES_MALE[class])
 							f:Show()
 						end
 					else

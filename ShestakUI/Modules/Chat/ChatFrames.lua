@@ -230,8 +230,6 @@ local function SetupChatPosAndFont(self)
 		-- Min. size for chat font
 		if fontSize < 11 then
 			FCF_SetChatWindowFontSize(nil, chat, 11)
-		elseif T.author == true then
-			FCF_SetChatWindowFontSize(nil, chat, 11)
 		elseif T.name == "Lunamorta" or T.name == "Nagiko" and T.realm == "Pozzo dell'Eternità" then
 			FCF_SetChatWindowFontSize(nil, chat, 12)
 		else
@@ -298,6 +296,15 @@ local old = FCFManager_GetNumDedicatedFrames
 function FCFManager_GetNumDedicatedFrames(...)
 	return select(1, ...) ~= "PET_BATTLE_COMBAT_LOG" and old(...) or 1
 end
+
+-- Remove player's realm name
+local function RemoveRealmName(self, event, msg, author, ...)
+	local realm = string.gsub(T.realm, " ", "")
+	if msg:find("-" .. realm) then
+		return false, gsub(msg, "%-"..realm, ""), author, ...
+	end
+end
+ChatFrame_AddMessageEventFilter("CHAT_MSG_SYSTEM", RemoveRealmName)
 
 ----------------------------------------------------------------------------------------
 --	Save slash command typo

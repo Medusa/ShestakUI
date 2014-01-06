@@ -94,9 +94,6 @@ L_UF_GHOST = "Spirito"
 L_UF_DEAD = "Morto"
 L_UF_OFFLINE = "Disconnesso"
 L_UF_MANA = "Poco mana"
-L_UF_TRINKET_READY = "Monile pronto all'uso: "
-L_UF_TRINKET_USED = "Monile utilizzato: "
-L_UF_WOTF_USED = "Volontà dei Reietti utilizzata: "
 
 -- Map
 L_MAP_CURSOR = "Cursore: "
@@ -290,7 +287,7 @@ L_POPUP_CURRENCY_CAP = "Hai raggiunto il valore massimo di"
 L_WELCOME_LINE_1 = "Benvenuto/a in ShestakUI "
 L_WELCOME_LINE_2_1 = "Digita /cfg per configurare l'interfaccia oppure visita http://shestak.org"
 L_WELCOME_LINE_2_2 = "per maggiori informazioni."
-L_WELCOME_LINE_3 = "Nota: questa versione di ShestakUI (|cff00FFFFOzEdit 1.3.5|r|cffFFFF00) è a cura di Oz di Pozzo dell'Eternità.|r"
+L_WELCOME_LINE_3 = "Nota: questa versione di ShestakUI (|cff00FFFFOzEdit 1.3.6|r|cffFFFF00) è a cura di Oz di Pozzo dell'Eternità.|r"
 
 -- Combat text
 L_COMBATTEXT_KILLING_BLOW = "Colpo di grazia"

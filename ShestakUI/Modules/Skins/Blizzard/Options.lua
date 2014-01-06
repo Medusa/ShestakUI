@@ -39,9 +39,13 @@ local function LoadSkin()
 		local frame = _G[voice[i]]
 		if frame then
 			frame:StripTextures()
-			frame:CreateBackdrop("Overlay")
-			frame.backdrop:SetPoint("TOPLEFT", -1, 0)
-			frame.backdrop:SetPoint("BOTTOMRIGHT", 0, 1)
+			frame:SetBackdrop({
+				bgFile = C.media.blank, edgeFile = C.media.blank, edgeSize = T.mult,
+				insets = {left = -T.mult, right = -T.mult, top = -T.mult, bottom = -T.mult}
+			})
+			frame:CreateBorder(true, true)
+			frame:SetBackdropColor(0, 0, 0, 0)
+			frame:SetBackdropBorderColor(unpack(C.media.border_color))
 		end
 	end
 
@@ -65,6 +69,7 @@ local function LoadSkin()
 	local checkboxes = {
 		"Advanced_MaxFPSCheckBox",
 		"Advanced_MaxFPSBKCheckBox",
+		"Advanced_DesktopGamma",
 		"AudioOptionsSoundPanelEnableSound",
 		"AudioOptionsSoundPanelSoundEffects",
 		"AudioOptionsSoundPanelErrorSpeech",
@@ -83,7 +88,7 @@ local function LoadSkin()
 		"AudioOptionsVoicePanelPushToTalkSound",
 		"NetworkOptionsPanelOptimizeSpeed",
 		"NetworkOptionsPanelUseIPv6",
-		"Advanced_DesktopGamma"
+		"NetworkOptionsPanelAdvancedCombatLogging"
 	}
 
 	for i = 1, getn(checkboxes) do

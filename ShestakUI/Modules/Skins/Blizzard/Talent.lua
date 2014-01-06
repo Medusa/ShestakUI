@@ -14,6 +14,11 @@ local function LoadSkin()
 
 	for i = 1, #buttons do
 		_G[buttons[i]]:SkinButton()
+		_G[buttons[i]].overlay:SetVertexColor(0.3, 0.3, 0.3, 0.3)
+		_G[buttons[i]]:SetScript("OnLeave", function(self)
+			_G[buttons[i]]:SetBackdropBorderColor(unpack(C.media.border_color))
+			_G[buttons[i]].overlay:SetVertexColor(0.3, 0.3, 0.3, 0.3)
+		end)
 	end
 
 	PlayerTalentFrameTalentsTutorialButton.Ring:Hide()
@@ -249,7 +254,7 @@ local function LoadSkin()
 
 		tab:CreateBackdrop("Default")
 		tab.backdrop:SetAllPoints()
-		tab:StyleButton()
+		tab:StyleButton(true)
 	end
 
 	-- Reposition tabs

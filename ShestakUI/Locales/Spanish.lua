@@ -94,9 +94,6 @@ L_UF_GHOST = "Fantasma"
 L_UF_DEAD = "Muerto"
 L_UF_OFFLINE = "Desconectado"
 L_UF_MANA = "Mana bajo"
-L_UF_TRINKET_READY = "Abalorio listo: "
-L_UF_TRINKET_USED = "Abalorio usado: "
-L_UF_WOTF_USED = "WotF usado: "
 
 -- Map
 L_MAP_CURSOR = "Cursor: "
@@ -290,7 +287,7 @@ L_POPUP_CURRENCY_CAP = "You get maximum value of" -- Needs review
 L_WELCOME_LINE_1 = "Bienvenido a ShestakUI "
 L_WELCOME_LINE_2_1 = "Escribe /cfg para configurar la interfaz, o visita http://shestak.org"
 L_WELCOME_LINE_2_2 = "para más información."
-L_WELCOME_LINE_3 = "Nota: esta versión de ShestakUI (|cff00FFFFOzEdit 1.3.5|r|cffFFFF00) está editado por Oz de Pozzo dell'Eternità.|r" -- Goooooooooogle translated
+L_WELCOME_LINE_3 = "Nota: esta versión de ShestakUI (|cff00FFFFOzEdit 1.3.6|r|cffFFFF00) está editado por Oz de Pozzo dell'Eternità.|r" -- Goooooooooogle translated
 
 -- Combat text
 L_COMBATTEXT_KILLING_BLOW = "Golpe de gracia"

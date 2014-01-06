@@ -41,13 +41,6 @@ if T.level ~= MAX_PLAYER_LEVEL then
 end
 
 ----------------------------------------------------------------------------------------
---	Shestak Config
-----------------------------------------------------------------------------------------
-if T.author == true then
-
-end
-
-----------------------------------------------------------------------------------------
 --	Medusa/Oz@Pozzo dell'Eternità Config
 ----------------------------------------------------------------------------------------
 if T.name == "Medusa" or T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
@@ -224,6 +217,8 @@ if T.name == "Lunamorta" or T.name == "Nagiko" and T.realm == "Pozzo dell'Eterni
 	C["aura"].pet_debuffs = true
 	C["aura"].player_aura_only = true
 	C["unitframe"].alternative_portraits = true
+	C["toppanel"].enable = false
+	C["stats"].battleground = true
 end
 
 -- Edit by Oz of shestakdotorg --

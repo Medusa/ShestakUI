@@ -14,6 +14,8 @@ C["filger_spells"] = {
 
 			-- Bone Shield
 			{spellID = 49222, unitID = "player", caster = "player", filter = "BUFF"},
+			-- Bone Wall (T16)
+			{spellID = 144948, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Vampiric Blood
 			{spellID = 55233, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Icebound Fortitude
@@ -78,7 +80,7 @@ C["filger_spells"] = {
 			-- Jade Warlord Figurine (Mastery, Use)
 			{spellID = 126597, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Physical Strength DPS
-			-- Assurance of Consequence (Strength, Proc)
+			-- Evil Eye of Galakras (Strength, Proc)
 			{spellID = 146245, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Thok's Tail Tip (Strength, Proc)
 			{spellID = 146250, unitID = "player", caster = "player", filter = "BUFF", absID = true},
@@ -457,6 +459,10 @@ C["filger_spells"] = {
 			{spellID = 137590, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Courageous Primal Diamond (Caster Heal)
 			{spellID = 137288, unitID = "player", caster = "all", filter = "BUFF"},
+
+			-- Legendary Cloak
+			-- Spirit of Chi-Ji
+			{spellID = 146200, unitID = "player", caster = "all", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -619,6 +625,8 @@ C["filger_spells"] = {
 			-- Internal
 			-- Lightweave
 			{spellID = 125487, filter = "ICD", trigger = "BUFF", duration = 60},
+			-- Purified Bindings of Immerseus (Intellect, Proc)
+			{spellID = 146046, filter = "ICD", trigger = "BUFF", duration = 115},
 		},
 	},
 	["HUNTER"] = {
@@ -1157,6 +1165,8 @@ C["filger_spells"] = {
 			-- Internal
 			-- Lightweave
 			{spellID = 125487, filter = "ICD", trigger = "BUFF", duration = 60},
+			-- Purified Bindings of Immerseus (Intellect, Proc)
+			{spellID = 146046, filter = "ICD", trigger = "BUFF", duration = 115},
 		},
 	},
 	["MONK"] = {
@@ -1309,6 +1319,10 @@ C["filger_spells"] = {
 			{spellID = 137593, unitID = "player", caster = "all", filter = "BUFF", absID = true},
 			-- Courageous Primal Diamond (Caster Heal)
 			{spellID = 137288, unitID = "player", caster = "all", filter = "BUFF"},
+
+			-- Legendary Cloak
+			-- Spirit of Chi-Ji
+			{spellID = 146200, unitID = "player", caster = "all", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -1483,6 +1497,10 @@ C["filger_spells"] = {
 			-- Long Arm of the Law
 			{spellID = 87173, unitID = "player", caster = "player", filter = "BUFF"},
 
+			-- Item sets
+			-- Divine Crusader (T16)
+			{spellID = 144595, unitID = "player", caster = "player", filter = "BUFF"},
+
 			-- Trinkets
 			-- General
 			-- Darkmoon Cards (Proc)
@@ -1505,7 +1523,7 @@ C["filger_spells"] = {
 			-- Jade Warlord Figurine (Mastery, Use)
 			{spellID = 126597, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Physical Strength DPS
-			-- Assurance of Consequence (Strength, Proc)
+			-- Evil Eye of Galakras (Strength, Proc)
 			{spellID = 146245, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Thok's Tail Tip (Strength, Proc)
 			{spellID = 146250, unitID = "player", caster = "player", filter = "BUFF", absID = true},
@@ -1581,6 +1599,10 @@ C["filger_spells"] = {
 			{spellID = 137593, unitID = "player", caster = "all", filter = "BUFF", absID = true},
 			-- Courageous Primal Diamond (Caster Heal)
 			{spellID = 137288, unitID = "player", caster = "all", filter = "BUFF"},
+
+			-- Legendary Cloak
+			-- Spirit of Chi-Ji
+			{spellID = 146200, unitID = "player", caster = "all", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -1811,6 +1833,10 @@ C["filger_spells"] = {
 			{spellID = 137590, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Courageous Primal Diamond (Caster Heal)
 			{spellID = 137288, unitID = "player", caster = "all", filter = "BUFF"},
+
+			-- Legendary Cloak
+			-- Spirit of Chi-Ji
+			{spellID = 146200, unitID = "player", caster = "all", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -1973,6 +1999,8 @@ C["filger_spells"] = {
 			-- Internal
 			-- Lightweave
 			{spellID = 125487, filter = "ICD", trigger = "BUFF", duration = 60},
+			-- Purified Bindings of Immerseus (Intellect, Proc)
+			{spellID = 146046, filter = "ICD", trigger = "BUFF", duration = 115},
 		},
 	},
 	["ROGUE"] = {
@@ -2382,6 +2410,10 @@ C["filger_spells"] = {
 			{spellID = 137590, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Courageous Primal Diamond (Caster Heal)
 			{spellID = 137288, unitID = "player", caster = "all", filter = "BUFF"},
+
+			-- Legendary Cloak
+			-- Spirit of Chi-Ji
+			{spellID = 146200, unitID = "player", caster = "all", filter = "BUFF"},
 		},
 		{
 			Name = "T_DEBUFF_ICON",
@@ -2522,6 +2554,8 @@ C["filger_spells"] = {
 			-- Internal
 			-- Lightweave
 			{spellID = 125487, filter = "ICD", trigger = "BUFF", duration = 60},
+			-- Purified Bindings of Immerseus (Intellect, Proc)
+			{spellID = 146046, filter = "ICD", trigger = "BUFF", duration = 115},
 		},
 	},
 	["WARLOCK"] = {
@@ -2765,6 +2799,8 @@ C["filger_spells"] = {
 			-- Internal
 			-- Lightweave
 			{spellID = 125487, filter = "ICD", trigger = "BUFF", duration = 60},
+			-- Purified Bindings of Immerseus (Intellect, Proc)
+			{spellID = 146046, filter = "ICD", trigger = "BUFF", duration = 115},
 		},
 	},
 	["WARRIOR"] = {
@@ -2850,7 +2886,7 @@ C["filger_spells"] = {
 			-- Jade Warlord Figurine (Mastery, Use)
 			{spellID = 126597, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Physical Strength DPS
-			-- Assurance of Consequence (Strength, Proc)
+			-- Evil Eye of Galakras (Strength, Proc)
 			{spellID = 146245, unitID = "player", caster = "player", filter = "BUFF"},
 			-- Thok's Tail Tip (Strength, Proc)
 			{spellID = 146250, unitID = "player", caster = "player", filter = "BUFF", absID = true},
@@ -3045,6 +3081,8 @@ C["filger_spells"] = {
 			{spellID = 80353, unitID = "player", caster = "all", filter = "BUFF"},
 			-- Ancient Hysteria
 			{spellID = 90355, unitID = "player", caster = "all", filter = "BUFF"},
+			-- Drums of Rage
+			{spellID = 146555, unitID = "player", caster = "all", filter = "BUFF"},
 
 			-- Professions
 			-- Synapse Springs
@@ -3130,6 +3168,8 @@ C["filger_spells"] = {
 			Position = {unpack(C["filger_position"].pve_debuff)},
 
 			-- Death Knight
+			-- Shroud of Purgatory
+			{spellID = 116888, unitID = "player", caster = "player", filter = "DEBUFF"},
 			-- Gnaw (Ghoul)
 			{spellID = 91800, unitID = "player", caster = "all", filter = "DEBUFF"},
 			-- Monstrous Blow (Mutated Ghoul)
@@ -3809,8 +3849,9 @@ C["filger_spells"] = {
 			{spellID = 23335, unitID = "target", caster = "all", filter = "BUFF"},
 			-- Netherstorm Flag
 			{spellID = 34976, unitID = "target", caster = "all", filter = "BUFF"},
+			-- Orb of Power
+			{spellID = 121175, unitID = "target", caster = "all", filter = "DEBUFF"},
 			-- Seaforium
-			{spellID = 52418, unitID = "target", caster = "all", filter = "BUFF"},
 			{spellID = 66271, unitID = "target", caster = "all", filter = "DEBUFF"},
 			-- Drink
 			{spellID = 80167, unitID = "target", caster = "all", filter = "BUFF"},

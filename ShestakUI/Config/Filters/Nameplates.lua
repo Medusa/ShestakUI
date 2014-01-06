@@ -54,6 +54,7 @@ T.DebuffWhiteList = {
 	[SpellName(10326)] = true,	-- Turn Evil
 	[SpellName(853)] = true,	-- Hammer of Justice
 	[SpellName(105593)] = true,	-- Fist of Justice
+	[SpellName(31803)] = true,	-- Censure
 	-- Priest
 	[SpellName(9484)] = true,	-- Shackle Undead
 	[SpellName(8122)] = true,	-- Psychic Scream
@@ -82,14 +83,13 @@ T.DebuffWhiteList = {
 	[SpellName(980)] = true,	-- Agony
 	[SpellName(172)] = true,	-- Corruption
 	[SpellName(48181)] = true,	-- Haunt
-	[SpellName(30108)] = true,	-- Unstable Affliction
 	[SpellName(348)] = true,	-- Immolate
+	[SpellName(30108)] = true,	-- Unstable Affliction
 	-- Warrior
 	[SpellName(20511)] = true,	-- Intimidating Shout
-	[SpellName(115798)] = true,	-- Weakened Blows
+	[SpellName(132168)] = true,	-- Shockwave
 	[SpellName(115767)] = true,	-- Deep Wounds
 	[SpellName(113746)] = true,	-- Weakened Armor
-	[SpellName(132168)] = true,	-- Shockwave
 	-- Racial
 	[SpellName(25046)] = true,	-- Arcane Torrent
 	[SpellName(20549)] = true,	-- War Stomp

@@ -197,6 +197,8 @@ C["raidcooldown"] = {
 	["height"] = 15,							-- Bars height
 	["width"] = 130,							-- Bars width(if show_icon = false, bar width+28)
 	["upwards"] = false,						-- Sort upwards bars
+	["expiration"] = false,						-- Sort by expiration time
+	["show_my"] = true,							-- Show my cooldowns
 	["show_icon"] = true,						-- Show icons
 	["show_inraid"] = true,						-- Show in raid zone
 	["show_inparty"] = true,					-- Show in party zone
@@ -491,7 +493,7 @@ C["unitframe_class_bar"] = {
 	["shard"] = true,							-- Shard/Burning bar
 	["rune"] = true,							-- Rune bar
 	["totem"] = true,							-- Totem bar
-	["range"] = false,							-- Range bar
+	["range"] = false,							-- Range bar (only for Priest)
 }
 
 ----------------------------------------------------------------------------------------

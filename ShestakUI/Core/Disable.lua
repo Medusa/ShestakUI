@@ -138,9 +138,12 @@ if IsAddOnLoaded("ChatSounds") then
 	C.chat.whisp_sound = false
 end
 
-=======
 if IsAddOnLoaded("Aurora") then
 	C.skins.blizzard_frames = false
+end
+
+if IsAddOnLoaded("BigWigs") then
+	C.automation.auto_role = false
 end
 
 -- Edit by Oz of shestakdotorg --

@@ -181,9 +181,9 @@ function T.SkinTab(tab, bg)
 	end
 end
 
-function T.SkinNextPrevButton(btn, horizonal)
+function T.SkinNextPrevButton(btn, horizonal, left)
 	local normal, pushed, disabled
-	local isPrevButton = btn:GetName() and (string.find(btn:GetName(), "Left") or string.find(btn:GetName(), "Prev") or string.find(btn:GetName(), "Decrement") or string.find(btn:GetName(), "Back"))
+	local isPrevButton = btn:GetName() and (string.find(btn:GetName(), "Left") or string.find(btn:GetName(), "Prev") or string.find(btn:GetName(), "Decrement") or string.find(btn:GetName(), "Back")) or left
 
 	if btn:GetNormalTexture() then
 		normal = btn:GetNormalTexture():GetTexture()
@@ -350,7 +350,7 @@ function T.SkinCheckBox(frame)
 	end
 
 	frame:HookScript("OnDisable", function(self)
-		if not self.SetDisabledTexture then return; end
+		if not self.SetDisabledTexture then return end
 		if self:GetChecked() then
 			self:SetDisabledTexture(disabled)
 		else
@@ -720,11 +720,11 @@ T.PostUpdatePower = function(power, unit, min, max)
 
 	if not UnitIsConnected(unit) then
 		power.value:SetText()
-	elseif UnitIsDead(unit) or UnitIsGhost(unit) then
+	elseif UnitIsDead(unit) or UnitIsGhost(unit) or max == 0 then
 		power.value:SetText()
 	else
 		if min ~= max then
-			if pType == 0 then
+			if pType == 0 and pToken ~= "POWER_TYPE_DINO_SONIC" then
 				if unit == "target" then
 					if C.unitframe.show_total_value == true then
 						if C.unitframe.color_value == true then
@@ -1037,7 +1037,7 @@ local setBarTicks = function(Castbar, ticknum)
 	end
 end
 
-T.PostCastStart = function(Castbar, unit, name, rank, text, castid)
+T.PostCastStart = function(Castbar, unit, name, castid)
 	Castbar.channeling = false
 	if unit == "vehicle" then unit = "player" end
 
@@ -1110,7 +1110,7 @@ T.PostCastStart = function(Castbar, unit, name, rank, text, castid)
 	end
 end
 
-T.PostChannelStart = function(Castbar, unit, name, rank, text)
+T.PostChannelStart = function(Castbar, unit, name)
 	Castbar.channeling = true
 	if unit == "vehicle" then unit = "player" end
 

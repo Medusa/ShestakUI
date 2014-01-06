@@ -781,6 +781,7 @@ if C.combattext.damage then
 				xCT4:AddMessage(missType)
 			elseif eventType == "SPELL_MISSED" or eventType == "RANGE_MISSED" then
 				local spellId, _, _, missType = select(12, ...)
+				if missType == "IMMUNE" and spellId == 118895 then return end
 				if C.combattext.icons then
 					icon = GetSpellTexture(spellId)
 					missType = misstypes[missType].." \124T"..icon..":"..C.combattext.icon_size..":"..C.combattext.icon_size..":0:0:64:64:5:59:5:59\124t"
@@ -836,8 +837,10 @@ if C.combattext.damage then
 				end
 				xCT3:AddMessage(ACTION_SPELL_INTERRUPT..": "..effect..msg, unpack(color))
 			elseif eventType == "PARTY_KILL" and C.combattext.killingblow then
-				local tname = select(9, ...)
-				xCT3:AddMessage(ACTION_PARTY_KILL..": "..tname, 0.2, 1, 0.2)
+				local destGUID, tname = select(8, ...)
+				local classIndex = select(2, GetPlayerInfoByGUID(destGUID))
+				local color = classIndex and RAID_CLASS_COLORS[classIndex] or {r = 0.2, g = 1, b = 0.2}
+				xCT3:AddMessage("|cff33FF33"..ACTION_PARTY_KILL..": |r"..tname, color.r, color.g, color.b)
 			end
 		end
 	end

@@ -156,6 +156,8 @@ L_GUI_COOLDOWN_RAID_ENABLE = "Включить рейдовые перезаря
 L_GUI_COOLDOWN_RAID_HEIGHT = "Высота индикаторов"
 L_GUI_COOLDOWN_RAID_WIDTH = "Ширина индикаторов"
 L_GUI_COOLDOWN_RAID_SORT = "Сделать сортировку вверх"
+L_GUI_COOLDOWN_RAID_EXPIRATION = "Сортировка по времени"
+L_GUI_COOLDOWN_RAID_SHOW_MY = "Отображать свои перезарядки"
 L_GUI_COOLDOWN_RAID_ICONS = "Отображать иконки рейдовых перезарядок"
 L_GUI_COOLDOWN_RAID_IN_RAID = "Отображать в рейде"
 L_GUI_COOLDOWN_RAID_IN_PARTY = "Отображать в группе"
@@ -383,7 +385,7 @@ L_GUI_UF_PLUGINS_HOLY_BAR = "Индикатор энергии Света"
 L_GUI_UF_PLUGINS_SHARD_BAR = "Индикатор осколков душ"
 L_GUI_UF_PLUGINS_RUNE_BAR = "Индикатор рун"
 L_GUI_UF_PLUGINS_TOTEM_BAR = "Индикатор тотемов"
-L_GUI_UF_PLUGINS_RANGE_BAR = "Индикатор досягаемости"
+L_GUI_UF_PLUGINS_RANGE_BAR = "Индикатор досягаемости (для жрецов)"
 
 -- Raid Frames options
 L_GUI_UF_AGGRO_BORDER = "Отображение угрозы"

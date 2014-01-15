@@ -6,32 +6,32 @@ local name = UnitName("player")
 
 local ALLOWED_GROUPS = {
 	["general"] = 1,
-	["misc"] = 1,
-	["announcements"] = 1,
-	["automation"] = 1,
-	["skins"] = 1,
-	["combattext"] = 1,
-	["reminder"] = 1,
-	["raidcooldown"] = 1,
-	["enemycooldown"] = 1,
-	["pulsecooldown"] = 1,
-	["threat"] = 1,
---	["meter"] = 1,
-	["tooltip"] = 1,
-	["chat"] = 1,
-	["bag"] = 1,
-	["minimap"] = 1,
-	["map"] = 1,
-	["loot"] = 1,
-	["nameplate"] = 1,
-	["actionbar"] = 1,
-	["aura"] = 1,
-	["unitframe"] = 1,
-	["unitframe_class_bar"] = 1,
-	["raidframe"] = 1,
-	["toppanel"] = 1,
-	["error"] = 1,
-	["stats"] = 1,
+	["misc"] = 2,
+	["announcements"] = 3,
+	["automation"] = 4,
+	["skins"] = 5,
+	["combattext"] = 6,
+	["reminder"] = 7,
+	["raidcooldown"] = 8,
+	["enemycooldown"] = 9,
+	["pulsecooldown"] = 10,
+	["threat"] = 11,
+	["tooltip"] = 12,
+	["chat"] = 13,
+	["bag"] = 14,
+	["minimap"] = 15,
+	["map"] = 16,
+	["loot"] = 17,
+	["nameplate"] = 18,
+	["actionbar"] = 19,
+	["aura"] = 20,
+	["unitframe"] = 21,
+	["unitframe_class_bar"] = 22,
+	["raidframe"] = 23,
+	["toppanel"] = 24,
+	["error"] = 25,
+	["stats"] = 26,
+--	["meter"] = 27,
 }
 
 local function Local(o)
@@ -216,15 +216,7 @@ local function Local(o)
 	if o == "UIConfigthreatwidth" then o = L_GUI_THREAT_WIDTH end
 	if o == "UIConfigthreatbar_rows" then o = L_GUI_THREAT_ROWS end
 	if o == "UIConfigthreathide_solo" then o = L_GUI_THREAT_HIDE_SOLO end
---[[
-	-- Meter options
-	if o == "UIConfigmeter" then o = L_GUI_METER end
-	if o == "UIConfigmeterenable" then o = L_GUI_METER_ENABLE end
-	if o == "UIConfigmeterspacing" then o = L_GUI_METER_SPACING end
-	if o == "UIConfigmeterheight" then o = L_GUI_METER_HEIGHT end
-	if o == "UIConfigmeterwidth" then o = L_GUI_METER_WIDTH end
-	if o == "UIConfigmetermaxbars" then o = L_GUI_METER_MAXBARS end
---]]
+
 	-- Tooltip options
 	if o == "UIConfigtooltip" then o = L_GUI_TOOLTIP end
 	if o == "UIConfigtooltipenable" then o = L_GUI_TOOLTIP_ENABLE end
@@ -480,6 +472,16 @@ local function Local(o)
 	if o == "UIConfigerrorblack" then o = L_GUI_ERROR_BLACK end
 	if o == "UIConfigerrorwhite" then o = L_GUI_ERROR_WHITE end
 	if o == "UIConfigerrorcombat" then o = L_GUI_ERROR_HIDE_COMBAT end
+
+--[[
+	-- Meter options
+	if o == "UIConfigmeter" then o = L_GUI_METER end
+	if o == "UIConfigmeterenable" then o = L_GUI_METER_ENABLE end
+	if o == "UIConfigmeterspacing" then o = L_GUI_METER_SPACING end
+	if o == "UIConfigmeterheight" then o = L_GUI_METER_HEIGHT end
+	if o == "UIConfigmeterwidth" then o = L_GUI_METER_WIDTH end
+	if o == "UIConfigmetermaxbars" then o = L_GUI_METER_MAXBARS end
+--]]
 
 	T.option = o
 end
@@ -737,10 +739,27 @@ function CreateUIConfig()
 	slider:SetValueStep(20)
 	slider:SetScript("OnValueChanged", function(self, value) groups:SetVerticalScroll(value) end)
 
+	local function sortMyTable(a, b)
+		return ALLOWED_GROUPS[a] < ALLOWED_GROUPS[b]
+	end
+	local function pairsByKey(t, f)
+		local a = {}
+		for n in pairs(t) do table.insert(a, n) end
+		table.sort(a, sortMyTable)
+		local i = 0
+		local iter = function()
+			i = i + 1
+			if a[i] == nil then return nil
+			else return a[i], t[a[i]]
+			end
+		end
+		return iter
+	end
+
 	local child = CreateFrame("Frame", nil, groups)
 	child:SetPoint("TOPLEFT")
 	local offset = 5
-	for i in pairs(ALLOWED_GROUPS) do
+	for i in pairsByKey(ALLOWED_GROUPS) do
 		local o = "UIConfig"..i
 		Local(o)
 		local button = NewButton(T.option, child)

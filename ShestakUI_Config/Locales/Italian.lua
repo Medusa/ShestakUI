@@ -63,7 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Controlla l'equip. non idoneo in instance"
 
 -- Automation options
 L_GUI_AUTOMATION = "Automatismi"
-L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Riduci dell'1% le competizioni alla casa d'aste"
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Riduci dell'1% le competizioni alla casa d'asta"
 L_GUI_AUTOMATION_RESURRECTION = "'Auto-risorgi' nei Campi di Battaglia"
 L_GUI_AUTOMATION_SCREENSHOT = "Cattura una schermata quando completi un'impresa"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Popup automatico restauro manufatto"

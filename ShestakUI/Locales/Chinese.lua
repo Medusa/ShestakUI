@@ -477,4 +477,7 @@ L_HIDE_BUTTON_2 = "点击毁灭=隐藏小地图（仅战斗）" -- Goooooooooogl
 -- MyRolePlay
 L_MRP = "剖面"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "损害赔偿的计" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

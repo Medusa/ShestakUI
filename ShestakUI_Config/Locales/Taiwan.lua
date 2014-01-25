@@ -63,6 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "使用錯誤的裝備時進行提醒"
 
 -- Automation options
 L_GUI_AUTOMATION = "自動設定"
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "1％削弱了拍賣行的比賽" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "在戰場中自動釋放靈魂"
 L_GUI_AUTOMATION_SCREENSHOT = "當你獲得成就時自動截屏"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "自動彈出幫助框體"
@@ -224,7 +225,7 @@ L_GUI_TOOLTIP_ITEM_TRANSMOGRIFY = "提示不能幻化的裝備"
 
 -- Chat options
 L_GUI_CHAT_ENABLE = "開啟聊天框增強"
-L_GUI_CHAT_TOP_EDITBOX = "編輯框頂部" -- Goooooooooogle translated
+L_GUI_CHAT_TOP_EDIT_BOX = "編輯框頂部" -- Goooooooooogle translated
 L_GUI_CHAT_BACKGROUND = "開啟聊天框背景"
 L_GUI_CHAT_BACKGROUND_ALPHA = "聊天背景透明度"
 L_GUI_CHAT_SPAM = "屏蔽無用系統信息('玩家1' 在決鬥中戰勝了 '玩家2')"

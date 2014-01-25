@@ -518,4 +518,7 @@ L_HIDE_BUTTON_2 = "Clique direito = esconder minimap (apenas fora de combate)" -
 -- MyRolePlay
 L_MRP = "Perfil"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "Medidor dos danos" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

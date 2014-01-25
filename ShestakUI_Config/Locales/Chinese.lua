@@ -63,6 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "进入副本时检查并警报非副本装备"
 
 -- Automation options
 L_GUI_AUTOMATION = "自动设定"
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "1％削弱了拍卖行的比赛" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "在战场中自动释放灵魂"
 L_GUI_AUTOMATION_SCREENSHOT = "当你获得成就的时候自动截屏"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "自动弹出帮助框体"
@@ -224,7 +225,7 @@ L_GUI_TOOLTIP_ITEM_TRANSMOGRIFY = "提示不能幻化的装备"
 
 -- Chat options
 L_GUI_CHAT_ENABLE = "开启聊天框增强"
-L_GUI_CHAT_TOP_EDITBOX = "编辑框顶部" -- Goooooooooogle translated
+L_GUI_CHAT_TOP_EDIT_BOX = "编辑框顶部" -- Goooooooooogle translated
 L_GUI_CHAT_BACKGROUND = "开启聊天框背景"
 L_GUI_CHAT_BACKGROUND_ALPHA = "聊天背景透明度"
 L_GUI_CHAT_SPAM = "屏蔽无用系统信息('玩家1' 在决斗中战胜了 '玩家2')"

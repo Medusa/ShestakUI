@@ -518,4 +518,7 @@ L_HIDE_BUTTON_2 = "마우스 오른쪽 버튼으로 클릭 = 숨기기 minimap (
 -- MyRolePlay
 L_MRP = "프로필"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "손해의 미터" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

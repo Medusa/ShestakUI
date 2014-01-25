@@ -134,4 +134,40 @@ if C.toppanel.mouseover == true then
 	end)
 end
 
+----------------------------------------------------------------------------------------
+--	Alternative background attached to minimap for Skada Damage Meter
+----------------------------------------------------------------------------------------
+local newSkadabg = CreateFrame("Frame", "SkadaBackground", UIParent)
+newSkadabg:RegisterEvent("PLAYER_LOGIN")
+newSkadabg:SetScript("OnEvent", function(self, event)
+	if not IsAddOnLoaded("Skada") then return end
+	if not Minimap then return end
+	if C.misc.new_skada_bg == true then
+		newSkadabg:CreatePanel("Transparent", Minimap:GetWidth() +4, 157, "BOTTOMLEFT", Minimap, "BOTTOMLEFT", -139, -25)
+		newSkadabg:SetFrameLevel(Minimap:GetFrameLevel())
+		newSkadabg:SetBackdropBorderColor(unpack(C["media"].border_color))
+		newSkadabg:SetBackdropColor(0, 0, 0, 0.7)
+	end
+end)
+
+----------------------------------------------------------------------------------------
+--	Alternative chat and chat tabs backgrounds color
+----------------------------------------------------------------------------------------
+if C.chat.alternative_background_color == true then
+	if C.chat.background == true then
+		ChatBackground:SetBackdropColor(0.1, 0.1, 0.1, C.chat.background_alpha)
+		if C.chat.tabs_mouseover ~= true then
+			ChatTabsPanel:SetBackdropColor(0.1, 0.1, 0.1, C.chat.background_alpha)
+		end
+	end
+end
+
+if C.chat.tabs_alternative_color == true then
+	if C.chat.background == true then
+		if C.chat.tabs_mouseover ~= true then
+			ChatTabsPanel:SetBackdropColor(0.1, 0.1, 0.1, C.chat.background_alpha)
+		end
+	end
+end
+
 -- Edit by Oz of shestakdotorg --

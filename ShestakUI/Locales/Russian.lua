@@ -477,4 +477,7 @@ L_HIDE_BUTTON_2 = "Щелкните правой кнопкой мыши = ск�
 -- MyRolePlay
 L_MRP = "Профиль"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "Метр из убытков" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

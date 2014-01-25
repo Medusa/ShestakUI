@@ -63,6 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Проверять 'плохое' снаряже
 
 -- Automation options
 L_GUI_AUTOMATION = "Автоматизация"
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Конкурируют на 1% соревнования аукционного дома" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "Воскрешение на полях боя"
 L_GUI_AUTOMATION_SCREENSHOT = "Сохранять скриншот, если получено достижение"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Окно сборки артефактов"
@@ -224,7 +225,7 @@ L_GUI_TOOLTIP_ITEM_TRANSMOGRIFY = "Отображать, если предмет
 
 -- Chat options
 L_GUI_CHAT_ENABLE = "Включить чат"
-L_GUI_CHAT_TOP_EDITBOX = "Редактировать окно на вершине" -- Goooooooooogle translated
+L_GUI_CHAT_TOP_EDIT_BOX = "Редактировать окно на вершине" -- Goooooooooogle translated
 L_GUI_CHAT_BACKGROUND = "Включить фон чата"
 L_GUI_CHAT_BACKGROUND_ALPHA = "Прозрачность фона чата"
 L_GUI_CHAT_SPAM = "Удаление системного спама в чате ('Игрок1' выиграл дуэль у 'Игрока2')"

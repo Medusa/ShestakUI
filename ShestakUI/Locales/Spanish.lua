@@ -477,4 +477,7 @@ L_HIDE_BUTTON_2 = "Haga clic derecho = ocultar minimapa (sólo fuera de combate)
 -- MyRolePlay
 L_MRP = "Perfil"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "Metro de los daños y perjuicios" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

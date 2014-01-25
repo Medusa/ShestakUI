@@ -62,6 +62,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Check bad gear in instance"
 
 -- Automation options
 L_GUI_AUTOMATION = "Automation"
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "1 %에 의해 약화 경매장의 대회" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "Auto resurrection in battlegrounds"
 L_GUI_AUTOMATION_SCREENSHOT = "Take screenshot when player get achievement"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Auto popup for solve artifact"
@@ -219,7 +220,7 @@ L_GUI_TOOLTIP_ITEM_TRANSMOGRIFY = "Displays items can not be transmogrified"
 
 -- Chat options
 L_GUI_CHAT_ENABLE = "Enable chat"
-L_GUI_CHAT_TOP_EDITBOX = "상단에 편집 상자" -- Goooooooooogle translated
+L_GUI_CHAT_TOP_EDIT_BOX = "상단에 편집 상자" -- Goooooooooogle translated
 L_GUI_CHAT_BACKGROUND = "Enable chat background"
 L_GUI_CHAT_BACKGROUND_ALPHA = "Alpha of chat background"
 L_GUI_CHAT_SPAM = "Removing some systems spam('Player1' won duel 'Player2')"

@@ -477,4 +477,7 @@ L_HIDE_BUTTON_2 = "Clic droit = peau minicarte (uniquement hors combat)" -- Gooo
 -- MyRolePlay
 L_MRP = "Profil"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "Indicateur des dommages" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

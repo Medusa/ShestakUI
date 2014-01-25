@@ -56,7 +56,8 @@ if C.skins.tiny_dps_layout_two == true then
 		title:SetFrameLevel(Minimap:GetFrameLevel())
 		title:FontString("Text", C.font.stylization_font, C.font.stylization_font_size, C.font.stylization_font_style, C.font.stylization_font_shadow)
 		title.Text:SetPoint("CENTER")
-		title.Text:SetText("DPS")
+		title.Text:SetText(L_TDPS)
+		title.Text:SetTextColor(T.color.r, T.color.g, T.color.b)
 	end)
 end
 

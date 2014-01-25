@@ -63,6 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Überprüfe auf schlechte Ausrüstung in Instanz
 
 -- Automation options
 L_GUI_AUTOMATION = "Automatisierung"
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Um 1% unterboten die Wettbewerbe des Auktionshauses" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "Automatisch im Schlachtfeld wiederbeleben"
 L_GUI_AUTOMATION_SCREENSHOT = "Speicher einen Screenshot wenn ein Achivment errungen wird"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Auto Popup für gelöste Artefakte"
@@ -224,7 +225,7 @@ L_GUI_TOOLTIP_ITEM_TRANSMOGRIFY = "Zeige an wenn Gegenstände nicht Transmorgifi
 
 -- Chat options
 L_GUI_CHAT_ENABLE = "Chat aktivieren"
-L_GUI_CHAT_TOP_EDITBOX = "Bearbeiten-Box oben" -- Goooooooooogle translated
+L_GUI_CHAT_TOP_EDIT_BOX = "Bearbeiten-Box oben" -- Goooooooooogle translated
 L_GUI_CHAT_BACKGROUND = "Chathintergrund aktivieren"
 L_GUI_CHAT_BACKGROUND_ALPHA = "Transparenz des Hintergrunds"
 L_GUI_CHAT_SPAM = "Entferne Systemspam ('Player1' gewinnt Duell 'Player2')"

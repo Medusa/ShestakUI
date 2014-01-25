@@ -54,14 +54,6 @@ if T.level ~= MAX_PLAYER_LEVEL then
 end
 
 ----------------------------------------------------------------------------------------
---	Oz@Pozzo dell'Eternità Config
-----------------------------------------------------------------------------------------
-if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
-	add("P_BUFF_ICON", {spellID = 114851, unitID = "player", caster = "player", filter = "BUFF"})	-- Blood Charge
-	add("P_BUFF_ICON", {spellID = 91342, unitID = "pet", caster = "player", filter = "BUFF"})		-- Shadow Infusion
-end
-
-----------------------------------------------------------------------------------------
 --	Medusa@Pozzo dell'Eternità Config
 ----------------------------------------------------------------------------------------
 if T.name == "Medusa" and T.realm == "Pozzo dell'Eternità" then
@@ -74,6 +66,14 @@ if T.name == "Medusa" and T.realm == "Pozzo dell'Eternità" then
 	add("COOLDOWN", {spellID = 112833, filter = "CD"})												-- Spectral Guise (cooldown)
 	add("COOLDOWN", {spellID = 15286, filter = "CD"})												-- Vampiric Embrace
 	add("COOLDOWN", {spellID = 108968, filter = "CD"})												-- Void Shift
+end
+
+----------------------------------------------------------------------------------------
+--	Oz@Pozzo dell'Eternità Config
+----------------------------------------------------------------------------------------
+if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
+	add("P_BUFF_ICON", {spellID = 114851, unitID = "player", caster = "player", filter = "BUFF"})	-- Blood Charge
+	add("P_BUFF_ICON", {spellID = 91342, unitID = "pet", caster = "player", filter = "BUFF"})		-- Shadow Infusion
 end
 
 -- Edit by Oz of shestakdotorg --

@@ -63,6 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Check bad gear in instance" -- Needs review
 
 -- Automation options
 L_GUI_AUTOMATION = "Automation" -- Needs review
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Socavado por el 1% de las competiciones de la Casa de Subastas" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "Auto resurrección en los Campos de Batalla"
 L_GUI_AUTOMATION_SCREENSHOT = "Tomar una captura de pantalla cuando consigas un logro"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Auto popup for solve artifact" -- Needs review
@@ -224,7 +225,7 @@ L_GUI_TOOLTIP_ITEM_TRANSMOGRIFY = "Displays items can not be transmogrified" -- 
 
 -- Chat options
 L_GUI_CHAT_ENABLE = "Activar chat"
-L_GUI_CHAT_TOP_EDITBOX = "Editar cuadro en la parte superior" -- Goooooooooogle translated
+L_GUI_CHAT_TOP_EDIT_BOX = "Editar cuadro en la parte superior" -- Goooooooooogle translated
 L_GUI_CHAT_BACKGROUND = "Activar fondo del chat"
 L_GUI_CHAT_BACKGROUND_ALPHA = "Opacidad del fondo del chat"
 L_GUI_CHAT_SPAM = "Remover ciertos mensajes de spam ('Jugador1' ha ganado un duelo a 'Jugador2')"

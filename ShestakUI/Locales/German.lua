@@ -477,4 +477,7 @@ L_HIDE_BUTTON_2 = "Right click = hide Minikarte (nur außerhalb des Kampfes)" --
 -- MyRolePlay
 L_MRP = "Profil"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "Meter von den Schäden" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

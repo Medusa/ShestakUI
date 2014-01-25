@@ -63,6 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Controlla l'equip. non idoneo in instance"
 
 -- Automation options
 L_GUI_AUTOMATION = "Automatismi"
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Riduci dell'1% le competizioni alla casa d'aste"
 L_GUI_AUTOMATION_RESURRECTION = "'Auto-risorgi' nei Campi di Battaglia"
 L_GUI_AUTOMATION_SCREENSHOT = "Cattura una schermata quando completi un'impresa"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Popup automatico restauro manufatto"
@@ -224,7 +225,7 @@ L_GUI_TOOLTIP_ITEM_TRANSMOGRIFY = "Mostra gli oggetti che non possono essere tra
 
 -- Chat options
 L_GUI_CHAT_ENABLE = "Attiva chat"
-L_GUI_CHAT_TOP_EDITBOX = "Casella di modifica in alto"
+L_GUI_CHAT_TOP_EDIT_BOX = "Casella di modifica in alto"
 L_GUI_CHAT_BACKGROUND = "Attiva lo sfondo della chat"
 L_GUI_CHAT_BACKGROUND_ALPHA = "Trasparenza sfondo della chat"
 L_GUI_CHAT_SPAM = "Rimozione di un po' di spam di sistema ('Giocatore1' sconfigge 'Giocatore2' in un duello.)"

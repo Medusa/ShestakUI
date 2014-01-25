@@ -69,7 +69,7 @@ local function SetChatStyle(frame)
 	_G[chat]:SetClampedToScreen(false)
 
 	-- Move the chat edit box
-	if C.skins.tiny_dps_layout_two ~= true then
+	if C.chat.top_edit_box  == true then
 		_G[chat.."EditBox"]:ClearAllPoints()
 		_G[chat.."EditBox"]:SetPoint("BOTTOMLEFT", ChatFrame1, "TOPLEFT", -10, 23)
 		_G[chat.."EditBox"]:SetPoint("BOTTOMRIGHT", ChatFrame1, "TOPRIGHT", 11, 23)

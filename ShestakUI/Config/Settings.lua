@@ -42,6 +42,7 @@ C["general"] = {
 C["misc"] = {
 	["hide_button"] = true,						-- Button to hide chat and minimap
 	["mage_portals"] = false,					-- Enable a hidden button on the minimap to show a list of teleports and portals (only for mages)
+	["new_skada_bg"] = false,					-- Enable a panel attached to minimap to use as an alternative background for Skada Damage Meter (it requires Skada Damage Meter)
 	["shift_marking"] = true,					-- Marks target when you push "shift"
 	["invite_keyword"] = "inv",					-- Short keyword for invite(for enable - in game type /ainv)
 	["afk_spin_camera"] = false,				-- Spin camera while afk
@@ -90,6 +91,7 @@ C["announcements"] = {
 --	Automation options
 ----------------------------------------------------------------------------------------
 C["automation"] = {
+	["auction_house_undercut"] = false,			-- Undercut by 1% the competitions of the auction house
 	["resurrection"] = false,					-- Auto resurrection in battlegrounds
 	["screenshot"] = false,						-- Take screenshot when player get achievement
 	["solve_artifact"] = false,					-- Auto popup for solve artifact
@@ -286,9 +288,10 @@ C["tooltip"] = {
 ----------------------------------------------------------------------------------------
 C["chat"] = {
 	["enable"] = true,							-- Enable chat
-	["top_editbox"] = true,						-- Edit box on top
+	["top_edit_box"] = true,					-- Edit box on top
 	["background"] = false,						-- Enable background for chat
 	["background_alpha"] = 0.7,					-- Background alpha
+	["alternative_background_color"] = false,	-- Alternative chat background color (change the color in Panels.lua, otherwise it is black)
 	["filter"] = false,							-- Removing some systems spam("Player1" won duel "Player2")
 	["spam"] = false,							-- Removing some players spam(gold/portals/etc)
 	["width"] = 350,							-- Chat width
@@ -300,6 +303,7 @@ C["chat"] = {
 	["bubbles"] = true,							-- Skin Blizzard chat bubbles
 	["combatlog"] = true,						-- Show CombatLog tab(need two reloads when false)
 	["tabs_mouseover"] = true,					-- Chat tabs on mouseover
+	["tabs_alternative_color"] = false,			-- Alternative chat tabs background color (change the color in Panels.lua, otherwise it is black)
 	["sticky"] = true,							-- Remember last channel
 	["damage_meter_spam"] = true,				-- Merge damage meter spam in one line-link
 }

@@ -477,4 +477,7 @@ L_HIDE_BUTTON_2 = "Click destro = nascondi minimappa (solo fuori dal combattimen
 -- MyRolePlay
 L_MRP = "Profilo"
 
+-- TinyDPS
+L_TDPS = "Contatore Danni"
+
 -- Edit by Oz of shestakdotorg --

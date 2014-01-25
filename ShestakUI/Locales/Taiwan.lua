@@ -477,4 +477,7 @@ L_HIDE_BUTTON_2 = "單擊鼠標右鍵=隱藏（只出戰鬥）" -- Goooooooooogl
 -- MyRolePlay
 L_MRP = "剖面"  -- Goooooooooogle translated
 
+-- TinyDPS
+L_TDPS = "損害賠償的計" -- Goooooooooogle translated
+
 -- Edit by Oz of shestakdotorg --

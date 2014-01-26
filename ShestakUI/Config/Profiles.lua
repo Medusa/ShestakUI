@@ -41,86 +41,10 @@ if T.level ~= MAX_PLAYER_LEVEL then
 end
 
 ----------------------------------------------------------------------------------------
---	Medusa/Oz@Pozzo dell'Eternità Config
-----------------------------------------------------------------------------------------
-if T.name == "Medusa" or T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
-	C["media"].texture = [[Interface\AddOns\TinyDPS\Textures\wglass.tga]]
-	C["position"].minimap = {"BOTTOM", UIParent, "BOTTOM", 200, 52}
-	C["position"].chat = {"BOTTOM", Minimap, "BOTTOM", -338, -26}
-	C["position"].bn_popup = {"BOTTOMLEFT", UIParent, "BOTTOMLEFT", 21, 21}
-	C["position"].ghost = {"TOPLEFT", "oUF_Player", "TOPLEFT", -2, 65}
-	C["position"].quest = {"TOPLEFT", UIParent, "TOPLEFT", 21, -21}
-	C["position"].loot = {"TOPLEFT", UIParent, "TOPLEFT", 21, -532}
-	C["position"].group_loot = {"TOPLEFT", UIParent, "TOPLEFT", 241, -211}
-	C["position"].threat_meter = {"BOTTOM", "oUF_Target", "BOTTOM", -175, -14}
-	C["position"].raid_cooldown = {"TOPRIGHT", UIParent, "TOPRIGHT", -304, -702}
-	C["position"].enemy_cooldown = {"BOTTOMLEFT", "oUF_Target", "BOTTOMRIGHT", 5, -67}
-	C["position"].bg_score = {"LEFT", UIParent, "BOTTOMLEFT", 21, 11}
-	C["position"].player_buffs_tiny_dps_layout_two = {"TOPRIGHT", UIParent, "TOPRIGHT", -21, -21}
-	C["position"].raid_buffs = {"BOTTOMLEFT", Minimap, "BOTTOMLEFT", -2, -25}
-	C["position"].top_panel = {"BOTTOM", Minimap, "BOTTOM", -365, 141}
-	C["position"].raid_utility = {"TOPLEFT", UIParent, "TOPLEFT", 244, -25}
-	C["position"].extra_button = {"RIGHT", "oUF_Player", "BOTTOM", -53, -126}
-	C["position"].bottom_bars = {"BOTTOMRIGHT", Minimap, "TOPLEFT", 132, 5}
-	C["position"].right_bars = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 296}
-	C["position"].vehicle_bar = {"BOTTOMRIGHT", ActionButton1, "BOTTOMLEFT", 353, 0}
-	C["position"].unitframes.player = {"BOTTOMRIGHT", Minimap, "TOPLEFT", -408, 276}
-	C["position"].unitframes.arena = {"BOTTOMRIGHT", UIParent, "RIGHT", -60, 122}
-	C["position"].unitframes.boss = {"BOTTOMRIGHT", UIParent, "RIGHT", -23, 122}
-	C["position"].unitframes.tank = {"BOTTOMLEFT", Minimap, "BOTTOMRIGHT", 7, 9}
-	C["position"].unitframes.player_castbar = {"CENTER", UIParent, "CENTER", -2, -84}
-	C["general"].welcome_message = false
-	C["misc"].hide_button = false
-	C["automation"].auction_house_undercut = true
-	C["automation"].logging_combat = true
-	C["skins"].tiny_dps_layout_two = true
-	C["combattext"].scrollable = true
-	C["combattext"].dk_runes = false
-	C["reminder"].raid_buffs_size = 19.8
-	C["reminder"].raid_buffs_alpha = 0.5
-	C["raidcooldown"].width = 186
-	C["threat"].height = 16
-	C["threat"].width = 120
-	C["threat"].bar_rows = 2
-	C["chat"].top_edit_box = false
-	C["chat"].background = true
-	C["chat"].width = 254
-	C["chat"].height = 130
-	C["chat"].chat_bar = false
-	C["chat"].tabs_mouseover = false
-	C["minimap"].size = 134
-	C["minimap"].toggle_menu = false
-	C["minimap"].farm_mode = false
-	C["nameplate"].health_value = true
-	C["actionbar"].hotkey = false
-	C["actionbar"].button_size = 24.4
-	C["actionbar"].toggle_mode = false
-	C["actionbar"].stancebar_hide = true
-	C["aura"].player_buff_size = 24.4
-	C["aura"].fot_debuffs = true
-	C["aura"].pet_debuffs = true
-	C["aura"].tot_debuffs = true
-	C["unitframe"].plugins_fader = true
-	C["unitframe_class_bar"].range = true
-	C["raidframe"].deficit_health = true
-	C["raidframe"].raid_tanks_tt = true
-	C["raidframe"].raid_groups = 8
-	C["raidframe"].raid_groups_vertical = true
-	C["raidframe"].plugins_aura_watch_timer = true
-	C["toppanel"].enable = true
-	C["toppanel"].mouseover = false
-	C["toppanel"].height = 24
-	C["toppanel"].width = 206
-	C["stats"].friend = false
-	C["stats"].bags = false
-	C["stats"].experience = false	
-end
-
-----------------------------------------------------------------------------------------
---	Ozlumin@Pozzo dell'Eternità Config
+--	Oz@Pozzo dell'Eternità Config
 --------------------------------------------------------------------------------------
-if T.name == "Ozlumin" and T.realm == "Pozzo dell'Eternità" then
-	C["media"].border_color = {0.90, 0.91, 0.98, 1}
+if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
+	C["media"].border_color = {0.3, 0.3, 0.3, 1}
 	C["position"].minimap = {"BOTTOM", UIParent, "BOTTOM", 200, 52}
 	C["position"].chat = {"BOTTOM", Minimap, "BOTTOM", -338, -26}
 	C["position"].bn_popup = {"BOTTOMLEFT", UIParent, "BOTTOMLEFT", 21, 21}
@@ -152,6 +76,7 @@ if T.name == "Ozlumin" and T.realm == "Pozzo dell'Eternità" then
 	C["skins"].skada = false
 	C["automation"].logging_combat = true
 	C["combattext"].scrollable = true
+	C["combattext"].dk_runes = false
 	C["reminder"].raid_buffs_size = 19.8
 	C["reminder"].raid_buffs_alpha = 0.5
 	C["raidcooldown"].width = 186
@@ -176,11 +101,14 @@ if T.name == "Ozlumin" and T.realm == "Pozzo dell'Eternità" then
 	C["aura"].fot_debuffs = true
 	C["aura"].pet_debuffs = true
 	C["aura"].tot_debuffs = true
+	C["unitframe"].own_color = true
+	C["unitframe"].uf_color = {0.15, 0.15, 0.15}
 	C["unitframe"].plugins_fader = true
-	C["unitframe_class_bar"].range = true
+	C["unitframe"].alternative_portraits = true
 	C["raidframe"].deficit_health = true
 	C["raidframe"].raid_tanks_tt = true
 	C["raidframe"].raid_groups = 8
+	C["raidframe"].raid_portraits = true
 	C["raidframe"].raid_groups_vertical = true
 	C["raidframe"].plugins_aura_watch_timer = true
 	C["toppanel"].enable = true
@@ -193,55 +121,12 @@ if T.name == "Ozlumin" and T.realm == "Pozzo dell'Eternità" then
 end
 
 ----------------------------------------------------------------------------------------
---	Ozzolo@Pozzo dell'Eternità Config
+--	Nagiko@Pozzo dell'Eternità Config
 ----------------------------------------------------------------------------------------
-if T.name == "Ozzolo" and T.realm == "Pozzo dell'Eternità" then
-	C["position"].vehicle = {"BOTTOMLEFT", "ActionBarAnchor", "BOTTOMRIGHT", 109, 100}
-	C["position"].ghost = {"TOPLEFT", "oUF_Player", "TOPLEFT", -2, 65}
-	C["position"].loot = {"TOPLEFT", UIParent, "TOPLEFT", 21, -532}
-	C["position"].group_loot = {"TOPLEFT", UIParent, "TOPLEFT", 241, -211}
-	C["position"].threat_meter = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -245, 24}
-	C["position"].enemy_cooldown = {"BOTTOMLEFT", "oUF_Target", "BOTTOMRIGHT", 5, -67}
-	C["position"].raid_utility = {"TOPLEFT", UIParent, "TOPLEFT", 241, -21}
-	C["position"].extra_button = {"RIGHT", "oUF_Player", "BOTTOM", -53, -126}
-	C["position"].unitframes.player = {"TOPLEFT", "ActionBarAnchor", "BOTTOMRIGHT", -558, 407}
-	C["position"].unitframes.target = {"TOPRIGHT", "ActionBarAnchor", "BOTTOMLEFT", 558, 407}
-	C["position"].unitframes.player_castbar = {"BOTTOMRIGHT", "oUF_Player", "BOTTOMLEFT", -203, -194}
-	C["position"].unitframes.target_castbar = {"TOPLEFT", "oUF_Target", "TOPRIGHT", -512, 56}
-	C["position"].unitframes.raid_heal = {"TOPLEFT", "ActionBarAnchor", "BOTTOMRIGHT", -331, 407}
-	C["media"].overlay_color = {0, 0, 0, 0.5}
-	C["general"].welcome_message = false
-	C["misc"].profession_database = true
-	C["automation"].screenshot = true
-	C["automation"].logging_combat = true
-	C["combattext"].scrollable = true
-	C["chat"].background = true
-	C["chat"].background_alpha = 0.5
-	C["minimap"].toggle_menu = false
-	C["actionbar"].hotkey = false
-	C["aura"].fot_debuffs = true
-	C["aura"].pet_debuffs = true
-	C["aura"].tot_debuffs = true
-	C["unitframe"].own_color = true
-	C["unitframe"].color_value = true
-	C["unitframe"].alternative_portraits = true
-	C["raidframe"].raid_tanks_tt = true
-	C["raidframe"].raid_groups = 8
-	C["raidframe"].raid_portraits = true
-	C["raidframe"].plugins_aura_watch_timer = true
-	C["raidframe"].plugins_auto_resurrection = true
-end
-
-----------------------------------------------------------------------------------------
---	Lunamorta & Nagiko@Pozzo dell'Eternità Config
-----------------------------------------------------------------------------------------
-if T.name == "Lunamorta" or T.name == "Nagiko" and T.realm == "Pozzo dell'Eternità" then
+if T.name == "Nagiko" and T.realm == "Pozzo dell'Eternità" then
 	C["font"].stats_font = C.media.normal_font
 	C["font"].stats_font_style = "OUTLINE"
 	C["font"].stats_font_size = 14
-	C["font"].combat_text_font = C.media.normal_font
-	C["font"].combat_text_font_style = "OUTLINE"
-	C["font"].combat_text_font_size = 16
 	C["font"].chat_tabs_font = C.media.normal_font
 	C["font"].chat_tabs_font_style = "OUTLINE"
 	C["font"].chat_tabs_font_size = 12
@@ -274,8 +159,9 @@ if T.name == "Lunamorta" or T.name == "Nagiko" and T.realm == "Pozzo dell'Eterni
 	C["position"].micro_menu = {"TOPLEFT", UIParent, "TOPLEFT", 21, -21}
 	C["position"].unitframes.arena = {"RIGHT", oUF_Target, "RIGHT", -242, 7}
 	C["position"].unitframes.boss = {"RIGHT", oUF_Target, "RIGHT", -242, 7}
-	C["media"].border_color = {0.1, 0.1, 0.1, 1}
+	C["media"].border_color = {0.6, 0.196078, 0.8, 1}
 	C["misc"].profession_database = true
+	C["automation"].auction_house_undercut = true
 	C["combattext"].enable = false
 	C["pulsecooldown"].enable = true
 	C["pulsecooldown"].sound = true
@@ -294,8 +180,7 @@ if T.name == "Lunamorta" or T.name == "Nagiko" and T.realm == "Pozzo dell'Eterni
 	C["aura"].pet_debuffs = true
 	C["aura"].player_aura_only = true
 	C["unitframe"].alternative_portraits = true
-	C["toppanel"].enable = false
-	C["stats"].battleground = true
+	C["raidframe"].raid_portraits = true
 end
 
 -- Edit by Oz of shestakdotorg --

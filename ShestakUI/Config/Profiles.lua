@@ -44,7 +44,7 @@ end
 --	Oz@Pozzo dell'Eternità Config
 --------------------------------------------------------------------------------------
 if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
-	C["media"].border_color = {0.3, 0.3, 0.3, 1}
+	C["media"].border_color = {0.2, 0.2, 0.2, 1}
 	C["position"].minimap = {"BOTTOM", UIParent, "BOTTOM", 200, 52}
 	C["position"].chat = {"BOTTOM", Minimap, "BOTTOM", -338, -26}
 	C["position"].bn_popup = {"BOTTOMLEFT", UIParent, "BOTTOMLEFT", 21, 21}
@@ -78,7 +78,6 @@ if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
 	C["combattext"].scrollable = true
 	C["combattext"].dk_runes = false
 	C["reminder"].raid_buffs_size = 19.8
-	C["reminder"].raid_buffs_alpha = 0.5
 	C["raidcooldown"].width = 186
 	C["threat"].height = 16
 	C["threat"].width = 120

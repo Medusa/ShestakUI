@@ -40,6 +40,16 @@ if T.level ~= MAX_PLAYER_LEVEL then
 
 end
 
+--[[
+if T.oz == true then
+	C["position"].quest = {"TOPLEFT", UIParent, "TOPLEFT", 21, -21}
+	C["position"].loot = {"TOPLEFT", UIParent, "TOPLEFT", 21, -532}
+	C["position"].group_loot = {"TOPLEFT", UIParent, "TOPLEFT", 241, -211}
+	C["position"].unitframes.player = {"CENTER", "ActionBarAnchor", "CENTER", 0, 390}
+	C["position"].unitframes.target = {"BOTTOMLEFT", "ActionBarAnchor", "TOPRIGHT", 106, 207}
+	C["position"].unitframes.raid_heal = {"TOPLEFT", "ActionBarAnchor", "TOPLEFT", -99, 228}
+end
+--]]
 ----------------------------------------------------------------------------------------
 --	Oz@Pozzo dell'Eternità Config
 --------------------------------------------------------------------------------------

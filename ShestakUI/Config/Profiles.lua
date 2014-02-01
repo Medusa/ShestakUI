@@ -54,7 +54,7 @@ if T.oz == true then
 	C["position"].loot = {"CENTER", UIParent, "CENTER", -422, -212}
 	C["position"].group_loot = {"TOP", UIParent, "TOP", 0, -100}
 	C["position"].threat_meter = {"BOTTOM", "oUF_Target", "BOTTOM", -193, -14}
-	C["position"].raid_cooldown = {"TOPRIGHT", UIParent, "TOPRIGHT", -304, -702}
+	C["position"].raid_cooldown = {"RIGHT", UIParent, "RIGHT", -243, -236}
 	C["position"].enemy_cooldown = {"BOTTOMLEFT", "oUF_Target", "BOTTOMRIGHT", 5, -67}
 	C["position"].bg_score = {"LEFT", UIParent, "BOTTOMLEFT", 21, 11}
 	C["position"].player_buffs = {"TOPRIGHT", UIParent, "TOPRIGHT", -21, -21}

@@ -362,11 +362,11 @@ function T.UploadDBM()
 	DBT_PersistentOptions["DBM"].Width = 189
 	DBT_PersistentOptions["DBM"].TimerX = 143
 	DBT_PersistentOptions["DBM"].TimerPoint = "BOTTOMLEFT"
-	DBT_PersistentOptions["DBM"].FillUpBars = true
-	DBT_PersistentOptions["DBM"].IconLeft = true
+	DBT_PersistentOptions["DBM"].FillUpBars = false
+	DBT_PersistentOptions["DBM"].IconLeft = false
 	DBT_PersistentOptions["DBM"].ExpandUpwards = true
 	DBT_PersistentOptions["DBM"].Texture = C.media.texture
-	DBT_PersistentOptions["DBM"].IconRight = false
+	DBT_PersistentOptions["DBM"].IconRight = true
 	DBT_PersistentOptions["DBM"].HugeBarXOffset = 0
 	DBT_PersistentOptions["DBM"].HugeBarsEnabled = false
 	DBT_PersistentOptions["DBM"].HugeWidth = 189
@@ -375,20 +375,20 @@ function T.UploadDBM()
 	DBT_PersistentOptions["DBM"].HugeBarYOffset = 7
 
 	if C.actionbar.bottombars == 1 then
-		DBM_SavedOptions.HPFrameY = 126
-		DBM_SavedOptions.RangeFrameY = 101
-		DBT_PersistentOptions["DBM"].TimerY = 139
-		DBT_PersistentOptions["DBM"].HugeTimerY = -136
+		DBM_SavedOptions.HPFrameY = 238
+		DBM_SavedOptions.RangeFrameY = 212
+		DBT_PersistentOptions["DBM"].TimerY = 250
+		DBT_PersistentOptions["DBM"].HugeTimerY = -25
 	elseif C.actionbar.bottombars == 2 then
-		DBM_SavedOptions.HPFrameY = 154
-		DBM_SavedOptions.RangeFrameY = 129
-		DBT_PersistentOptions["DBM"].TimerY = 167
-		DBT_PersistentOptions["DBM"].HugeTimerY = -108
+		DBM_SavedOptions.HPFrameY = 266
+		DBM_SavedOptions.RangeFrameY = 240
+		DBT_PersistentOptions["DBM"].TimerY = 278
+		DBT_PersistentOptions["DBM"].HugeTimerY = 3
 	elseif C.actionbar.bottombars == 3 then
-		DBM_SavedOptions.HPFrameY = 182
-		DBM_SavedOptions.RangeFrameY = 157
-		DBT_PersistentOptions["DBM"].TimerY = 195
-		DBT_PersistentOptions["DBM"].HugeTimerY = -80
+		DBM_SavedOptions.HPFrameY = 294
+		DBM_SavedOptions.RangeFrameY = 306
+		DBT_PersistentOptions["DBM"].TimerY = 294
+		DBT_PersistentOptions["DBM"].HugeTimerY = 31
 	end
 	DBM_SavedOptions.InstalledBars = C.actionbar.bottombars
 end

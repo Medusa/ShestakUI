@@ -40,45 +40,42 @@ if T.level ~= MAX_PLAYER_LEVEL then
 
 end
 
---[[
-if T.oz == true then
-	C["position"].quest = {"TOPLEFT", UIParent, "TOPLEFT", 21, -21}
-	C["position"].loot = {"TOPLEFT", UIParent, "TOPLEFT", 21, -532}
-	C["position"].group_loot = {"TOPLEFT", UIParent, "TOPLEFT", 241, -211}
-	C["position"].unitframes.player = {"CENTER", "ActionBarAnchor", "CENTER", 0, 390}
-	C["position"].unitframes.target = {"BOTTOMLEFT", "ActionBarAnchor", "TOPRIGHT", 106, 207}
-	C["position"].unitframes.raid_heal = {"TOPLEFT", "ActionBarAnchor", "TOPLEFT", -99, 228}
-end
---]]
 ----------------------------------------------------------------------------------------
 --	Oz@Pozzo dell'Eternità Config
 --------------------------------------------------------------------------------------
-if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
+if T.oz == true then
 	C["media"].border_color = {0.2, 0.2, 0.2, 1}
-	C["position"].minimap = {"BOTTOM", UIParent, "BOTTOM", 200, 52}
+	C["position"].minimap = {"BOTTOM", UIParent, "BOTTOM", 205, 52}
 	C["position"].chat = {"BOTTOM", Minimap, "BOTTOM", -338, -26}
 	C["position"].bn_popup = {"BOTTOMLEFT", UIParent, "BOTTOMLEFT", 21, 21}
+	C["position"].vehicle = {"BOTTOMLEFT", UIParent, "BOTTOMLEFT", 21, 48}
 	C["position"].ghost = {"TOPLEFT", "oUF_Player", "TOPLEFT", -2, 65}
-	C["position"].quest = {"TOPLEFT", UIParent, "TOPLEFT", 21, -21}
-	C["position"].loot = {"TOPLEFT", UIParent, "TOPLEFT", 21, -532}
-	C["position"].group_loot = {"TOPLEFT", UIParent, "TOPLEFT", 241, -211}
-	C["position"].threat_meter = {"BOTTOM", "oUF_Target", "BOTTOM", -175, -14}
+	C["position"].quest = {"TOPRIGHT", UIParent, "TOPRIGHT", -276, -88}
+	C["position"].loot = {"CENTER", UIParent, "CENTER", -422, -212}
+	C["position"].group_loot = {"TOP", UIParent, "TOP", 0, -100}
+	C["position"].threat_meter = {"BOTTOM", "oUF_Target", "BOTTOM", -193, -14}
 	C["position"].raid_cooldown = {"TOPRIGHT", UIParent, "TOPRIGHT", -304, -702}
 	C["position"].enemy_cooldown = {"BOTTOMLEFT", "oUF_Target", "BOTTOMRIGHT", 5, -67}
 	C["position"].bg_score = {"LEFT", UIParent, "BOTTOMLEFT", 21, 11}
 	C["position"].player_buffs = {"TOPRIGHT", UIParent, "TOPRIGHT", -21, -21}
 	C["position"].raid_buffs = {"BOTTOMLEFT", Minimap, "BOTTOMLEFT", -2, -25}
 	C["position"].top_panel = {"BOTTOM", Minimap, "BOTTOM", -365, 141}
-	C["position"].raid_utility = {"TOPLEFT", UIParent, "TOPLEFT", 244, -25}
+	C["position"].raid_utility = {"TOPLEFT", UIParent, "TOPLEFT", 405, -23}
 	C["position"].extra_button = {"RIGHT", "oUF_Player", "BOTTOM", -53, -126}
 	C["position"].bottom_bars = {"BOTTOMRIGHT", Minimap, "TOPLEFT", 132, 5}
 	C["position"].right_bars = {"BOTTOMRIGHT", UIParent, "BOTTOMRIGHT", -21, 296}
+	C["position"].stance_bar = {"BOTTOM", UIParent, "BOTTOM", -322, 2}
 	C["position"].vehicle_bar = {"BOTTOMRIGHT", ActionButton1, "BOTTOMLEFT", 353, 0}
-	C["position"].unitframes.player = {"BOTTOMRIGHT", Minimap, "TOPLEFT", -408, 276}
+	C["position"].unitframes.player = {"BOTTOMLEFT", Minimap, "LEFT", -249, 279}
+	C["position"].unitframes.target = {"BOTTOMLEFT", "oUF_Player", "TOPRIGHT", 169, -27}
+	C["position"].unitframes.party_heal = {"TOPLEFT", "oUF_Player", "BOTTOMRIGHT", 7, -19}
+	C["position"].unitframes.raid_heal = {"TOPLEFT", UIParent, "TOPLEFT", 23, -23}
+	C["position"].unitframes.party_dps = {"BOTTOMLEFT", UIParent, "LEFT", 23, -23}
+	C["position"].unitframes.raid_dps = {"TOPLEFT", UIParent, "TOPLEFT", 23, -23}
 	C["position"].unitframes.arena = {"BOTTOMRIGHT", UIParent, "RIGHT", -60, 122}
 	C["position"].unitframes.boss = {"BOTTOMRIGHT", UIParent, "RIGHT", -23, 122}
 	C["position"].unitframes.tank = {"BOTTOMLEFT", Minimap, "BOTTOMRIGHT", 7, 9}
-	C["position"].unitframes.player_castbar = {"CENTER", UIParent, "CENTER", -2, -84}
+	C["position"].unitframes.player_castbar = {"BOTTOMLEFT", "oUF_Player", "LEFT", -11, -144}
 	C["general"].welcome_message = false
 	C["misc"].hide_button = false
 	C["misc"].new_skada_bg = true
@@ -90,7 +87,7 @@ if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
 	C["reminder"].raid_buffs_size = 19.8
 	C["raidcooldown"].width = 186
 	C["threat"].height = 16
-	C["threat"].width = 120
+	C["threat"].width = 155
 	C["threat"].bar_rows = 2
 	C["chat"].top_edit_box = false
 	C["chat"].background = true
@@ -104,22 +101,15 @@ if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
 	C["nameplate"].health_value = true
 	C["actionbar"].hotkey = false
 	C["actionbar"].button_size = 24.4
-	C["actionbar"].toggle_mode = false
 	C["actionbar"].stancebar_hide = true
 	C["aura"].player_buff_size = 24.4
 	C["aura"].fot_debuffs = true
 	C["aura"].pet_debuffs = true
 	C["aura"].tot_debuffs = true
-	C["unitframe"].own_color = true
-	C["unitframe"].uf_color = {0.15, 0.15, 0.15}
-	C["unitframe"].plugins_fader = true
-	C["unitframe"].alternative_portraits = true
+	C["unitframe"].class_icons_portraits = false
 	C["raidframe"].deficit_health = true
 	C["raidframe"].raid_tanks_tt = true
 	C["raidframe"].raid_groups = 8
-	C["raidframe"].raid_portraits = true
-	C["raidframe"].raid_groups_vertical = true
-	C["raidframe"].plugins_aura_watch_timer = true
 	C["toppanel"].enable = true
 	C["toppanel"].mouseover = false
 	C["toppanel"].height = 24

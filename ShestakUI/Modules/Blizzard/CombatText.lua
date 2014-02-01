@@ -342,7 +342,7 @@ for i = 1, numf do
 	if i == 1 then
 		f:SetJustifyH(ct.justify_1)
 		if C.unitframe.enable == true and _G.oUF_Player and T.oz == true then
-			f:SetPoint("CENTER", -330, 205)
+			f:SetPoint("BOTTOMLEFT", "oUF_Player", "TOPLEFT", 263, -162)
 		elseif C.unitframe.enable == true and _G.oUF_Player then
 			f:SetPoint("BOTTOMLEFT", "oUF_Player", "TOPLEFT", -3, 60)
 		else
@@ -351,7 +351,7 @@ for i = 1, numf do
 	elseif i == 2 then
 		f:SetJustifyH(ct.justify_2)
 		if C.unitframe.enable == true and _G.oUF_Player and T.oz == true then
-			f:SetPoint("CENTER", -330, 90)
+			f:SetPoint("BOTTOMRIGHT", "oUF_Player", "TOPRIGHT", -245, -162)
 		elseif C.unitframe.enable == true and _G.oUF_Player then
 			f:SetPoint("BOTTOMRIGHT", "oUF_Player", "TOPRIGHT", 5, 60)
 		else
@@ -360,7 +360,11 @@ for i = 1, numf do
 	elseif i == 3 then
 		f:SetJustifyH(ct.justify_3)
 		f:SetWidth(256)
-		f:SetPoint("CENTER", 0, 205)
+		if C.unitframe.enable == true and _G.oUF_Player and T.oz == true then
+			f:SetPoint("BOTTOMLEFT", "oUF_Player", "TOPLEFT", -19, 253)
+		else
+			f:SetPoint("CENTER", 0, 205)
+		end
 	else
 		f:SetJustifyH(ct.justify_4)
 		f:SetWidth(200)
@@ -368,7 +372,7 @@ for i = 1, numf do
 			f:SetHeight(150)
 		end
 		if C.unitframe.enable == true and _G.oUF_Player and T.oz == true then
-			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", -47, 278)
+			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", -19, 138) --ok
 		elseif C.unitframe.enable == true and _G.oUF_Target then
 			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", 2, 278)
 		else

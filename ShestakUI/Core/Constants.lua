@@ -15,7 +15,7 @@ T.version = GetAddOnMetadata("ShestakUI", "Version")
 T.getscreenheight = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "%d+x(%d+)"))
 T.getscreenwidth = tonumber(string.match(({GetScreenResolutions()})[GetCurrentResolution()], "(%d+)x+%d"))
 
-if T.name == "Oz" and T.realm == "Nemesis" then
+if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
 	T.oz = true
 end
 

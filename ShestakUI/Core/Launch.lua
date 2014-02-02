@@ -33,7 +33,7 @@ local function InstallUI()
 	SetCVar("autoOpenLootHistory", 0)
 	SetCVar("lossOfControl", 0)
 
-	if T.name == "Oz" and T.realm == "Pozzo dell'Eternità" then
+	if T.oz == true then
 		SetCVar("scriptErrors", 1)
 	end
 

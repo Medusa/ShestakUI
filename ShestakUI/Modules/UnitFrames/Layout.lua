@@ -118,11 +118,7 @@ local function Shared(self, unit)
 	self.Power.frequentUpdates = true
 	self.Power.colorDisconnected = true
 	self.Power.colorTapping = true
-	if C.unitframe.own_color == true then
-		self.Power.colorClass = true
-	else
-		self.Power.colorPower = true
-	end
+	self.Power.colorPower = true
 	if C.unitframe.plugins_smooth_bar == true then
 		self.Power.Smooth = true
 	end

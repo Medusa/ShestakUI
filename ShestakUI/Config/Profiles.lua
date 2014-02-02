@@ -44,6 +44,9 @@ end
 --	Oz@Pozzo dell'Eternità Config
 --------------------------------------------------------------------------------------
 if T.oz == true then
+	C["font"].chat_font = [[Interface\AddOns\ShestakUI\Media\Fonts\homespun.ttf]]
+	C["font"].chat_font_style = "OUTLINEMONOCHROME"
+	C["font"].chat_font_shadow = false
 	C["media"].border_color = {0.2, 0.2, 0.2, 1}
 	C["position"].minimap = {"BOTTOM", UIParent, "BOTTOM", 205, 52}
 	C["position"].chat = {"BOTTOM", Minimap, "BOTTOM", -338, -26}
@@ -106,7 +109,9 @@ if T.oz == true then
 	C["aura"].fot_debuffs = true
 	C["aura"].pet_debuffs = true
 	C["aura"].tot_debuffs = true
-	C["unitframe"].class_icons_portraits = false
+	C["unitframe"].own_color = true
+	C["unitframe"].color_value = true
+	C["unitframe"].bar_color_value = true
 	C["raidframe"].deficit_health = true
 	C["raidframe"].raid_tanks_tt = true
 	C["raidframe"].raid_groups = 8

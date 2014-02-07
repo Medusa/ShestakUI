@@ -228,10 +228,10 @@ local function SetupChatPosAndFont(self)
 		local _, fontSize = FCF_GetChatWindowInfo(id)
 
 		-- Min. size for chat font
-		if fontSize < 10 then
-			FCF_SetChatWindowFontSize(nil, chat, 10)
+		if fontSize < 11 then
+			FCF_SetChatWindowFontSize(nil, chat, 11)
 		elseif T.oz == true then
-			FCF_SetChatWindowFontSize(nil, chat, 10)		
+			FCF_SetChatWindowFontSize(nil, chat, 16)		
 		elseif T.name == "Nagiko" and T.realm == "Pozzo dell'Eternità" then
 			FCF_SetChatWindowFontSize(nil, chat, 12)
 		else

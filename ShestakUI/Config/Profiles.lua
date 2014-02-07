@@ -44,7 +44,7 @@ end
 --	Oz@Pozzo dell'Eternità Config
 --------------------------------------------------------------------------------------
 if T.oz == true then
---	C["font"].chat_font = [[Interface\AddOns\ShestakUI\Media\Fonts\homespun.ttf]]
+	C["font"].chat_font = [[Interface\AddOns\ShestakUI\Media\Fonts\Pixel-UniCode.ttf]]
 	C["font"].chat_font_style = "OUTLINEMONOCHROME"
 	C["font"].chat_font_shadow = false
 	C["media"].border_color = {0.2, 0.2, 0.2, 1}

@@ -63,7 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Проверять 'плохое' снаряже
 
 -- Automation options
 L_GUI_AUTOMATION = "Автоматизация"
-L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Конкурируют на 1% соревнования аукционного дома" -- Goooooooooogle translated
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Конкурируют на 1%, что соревнования аукционных домов" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "Воскрешение на полях боя"
 L_GUI_AUTOMATION_SCREENSHOT = "Сохранять скриншот, если получено достижение"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Окно сборки артефактов"

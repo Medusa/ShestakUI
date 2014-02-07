@@ -62,7 +62,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Check bad gear in instance"
 
 -- Automation options
 L_GUI_AUTOMATION = "Automation"
-L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Minado por 1% das competições da casa de leilões" -- Goooooooooogle translated
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Minado por 1% das competições das casas de leilão" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "Auto resurrection in battlegrounds"
 L_GUI_AUTOMATION_SCREENSHOT = "Take screenshot when player get achievement"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Auto popup for solve artifact"

@@ -63,7 +63,7 @@ L_GUI_ANNOUNCEMENTS_BAD_GEAR = "Check bad gear in instance" -- Needs review
 
 -- Automation options
 L_GUI_AUTOMATION = "Automation" -- Needs review
-L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Inférieurs de 1% des concours de la maison de vente aux enchères" -- Goooooooooogle translated
+L_GUI_AUTOMATION_AUCTION_HOUSE_UNDERCUT = "Inférieurs de 1% des concours des maisons d'enchères" -- Goooooooooogle translated
 L_GUI_AUTOMATION_RESURRECTION = "Autorésurrection en champ de bataille"
 L_GUI_AUTOMATION_SCREENSHOT = "Prend un screenshot quand un evenement est accomplie"
 L_GUI_AUTOMATION_SOLVE_ARTIFACT = "Auto popup for solve artifact" -- Needs review

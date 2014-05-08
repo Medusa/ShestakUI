@@ -1,6 +1,6 @@
 ## Interface: 50400
 ## Title: ShestakUI Filger
-## Notes: Class timers for ShestakUI. Edit 1.4.4 by Oz of Pozzo dell'Eternità
+## Notes: Class timers for ShestakUI. Edit 1.4.5 by Oz of Pozzo dell'Eternità
 ## Author: Nils Ruesch
 ## Version: 4.58
 ## Credits: Affli, Ildyria, SinaC

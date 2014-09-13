@@ -54,7 +54,7 @@ if T.oz == true then
 	C["position"].vehicle = {"BOTTOMLEFT", UIParent, "BOTTOMLEFT", 21, 48}
 	C["position"].ghost = {"TOPLEFT", "oUF_Player", "TOPLEFT", -2, 65}
 	C["position"].quest = {"TOPRIGHT", UIParent, "TOPRIGHT", -276, -88}
-	C["position"].loot = {"CENTER", UIParent, "CENTER", -421, -212}
+	C["position"].loot = {"CENTER", UIParent, "CENTER", -422, -212}
 	C["position"].group_loot = {"TOP", UIParent, "TOP", 0, -100}
 	C["position"].threat_meter = {"BOTTOM", "oUF_Target", "BOTTOM", -193, -14}
 	C["position"].raid_cooldown = {"RIGHT", UIParent, "RIGHT", -243, -236}
@@ -83,7 +83,6 @@ if T.oz == true then
 	C["misc"].hide_button = false
 	C["misc"].new_skada_bg = true
 	C["automation"].auction_house_undercut = true
-	C["automation"].logging_combat = true
 	C["skins"].skada = false
 	C["combattext"].scrollable = true
 	C["combattext"].dk_runes = false

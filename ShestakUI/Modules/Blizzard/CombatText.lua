@@ -372,7 +372,7 @@ for i = 1, numf do
 			f:SetHeight(150)
 		end
 		if C.unitframe.enable == true and _G.oUF_Player and T.oz == true then
-			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", -19, 138) --ok
+			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", -19, 138)
 		elseif C.unitframe.enable == true and _G.oUF_Target then
 			f:SetPoint("BOTTOMRIGHT", "oUF_Target", "TOPRIGHT", 2, 278)
 		else

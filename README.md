@@ -1,3 +1,5 @@
+ShestakUI_OzEdit is discontinued.
+
 ![placeholder img](http://i.imgur.com/AomUR.png "Logo")
 
 Hi all!
